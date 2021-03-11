@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3273CD3F25FA1B4B008F3764 /* DailymotionGithubUsers_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3273CD3525FA1B4B008F3764 /* DailymotionGithubUsers_Networking.framework */; };
+		3273CD4425FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD4325FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.swift */; };
+		3273CD4625FA1B4B008F3764 /* DailymotionGithubUsers_Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3273CD3825FA1B4B008F3764 /* DailymotionGithubUsers_Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3273CD5A25FA2055008F3764 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD5925FA2055008F3764 /* APIClient.swift */; };
+		3273CD5E25FA20C1008F3764 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD5D25FA20C1008F3764 /* APIRequest.swift */; };
+		3273CD6325FA2102008F3764 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD6225FA2102008F3764 /* HTTPMethod.swift */; };
+		3273CD6725FA2150008F3764 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD6625FA2150008F3764 /* RequestBuilder.swift */; };
+		3273CD6E25FA21EE008F3764 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD6D25FA21EE008F3764 /* HTTPHeader.swift */; };
+		3273CD7525FA2248008F3764 /* HTTPHeader+ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD7425FA2248008F3764 /* HTTPHeader+ContentType.swift */; };
+		3273CD7B25FA229B008F3764 /* HTTPHeader+Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD7A25FA229B008F3764 /* HTTPHeader+Authorization.swift */; };
+		3273CD7F25FA22E3008F3764 /* URL+APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD7E25FA22E3008F3764 /* URL+APIRequest.swift */; };
+		3273CD8325FA28D6008F3764 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD8225FA28D6008F3764 /* APIResponse.swift */; };
+		3273CD8725FA28F5008F3764 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD8625FA28F5008F3764 /* HTTPError.swift */; };
+		3273CD8D25FA2924008F3764 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD8C25FA2924008F3764 /* ResponseError.swift */; };
+		3273CD9125FA2A53008F3764 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD9025FA2A53008F3764 /* APIError.swift */; };
+		3273CD9525FA2A9B008F3764 /* RequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD9425FA2A9B008F3764 /* RequestResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3273CD4025FA1B4B008F3764 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3273CD2C25FA1B4B008F3764 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3273CD3425FA1B4B008F3764;
+			remoteInfo = DailymotionGithubUsers_Networking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3273CD3525FA1B4B008F3764 /* DailymotionGithubUsers_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DailymotionGithubUsers_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3273CD3825FA1B4B008F3764 /* DailymotionGithubUsers_Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailymotionGithubUsers_Networking.h; sourceTree = "<group>"; };
+		3273CD3925FA1B4B008F3764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3273CD3E25FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailymotionGithubUsers_NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3273CD4325FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionGithubUsers_NetworkingTests.swift; sourceTree = "<group>"; };
+		3273CD4525FA1B4B008F3764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3273CD5925FA2055008F3764 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3273CD5D25FA20C1008F3764 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		3273CD6225FA2102008F3764 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		3273CD6625FA2150008F3764 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		3273CD6D25FA21EE008F3764 /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		3273CD7425FA2248008F3764 /* HTTPHeader+ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeader+ContentType.swift"; sourceTree = "<group>"; };
+		3273CD7A25FA229B008F3764 /* HTTPHeader+Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeader+Authorization.swift"; sourceTree = "<group>"; };
+		3273CD7E25FA22E3008F3764 /* URL+APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+APIRequest.swift"; sourceTree = "<group>"; };
+		3273CD8225FA28D6008F3764 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		3273CD8625FA28F5008F3764 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		3273CD8C25FA2924008F3764 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		3273CD9025FA2A53008F3764 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3273CD9425FA2A9B008F3764 /* RequestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3273CD3225FA1B4B008F3764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3273CD3B25FA1B4B008F3764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3273CD3F25FA1B4B008F3764 /* DailymotionGithubUsers_Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3273CD2B25FA1B4B008F3764 = {
+			isa = PBXGroup;
+			children = (
+				3273CD3725FA1B4B008F3764 /* DailymotionGithubUsers_Networking */,
+				3273CD4225FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests */,
+				3273CD3625FA1B4B008F3764 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3273CD3625FA1B4B008F3764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3273CD3525FA1B4B008F3764 /* DailymotionGithubUsers_Networking.framework */,
+				3273CD3E25FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3273CD3725FA1B4B008F3764 /* DailymotionGithubUsers_Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3273CD5725FA1FDD008F3764 /* API */,
+				3273CD3825FA1B4B008F3764 /* DailymotionGithubUsers_Networking.h */,
+				3273CD3925FA1B4B008F3764 /* Info.plist */,
+			);
+			path = DailymotionGithubUsers_Networking;
+			sourceTree = "<group>";
+		};
+		3273CD4225FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				3273CD4325FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.swift */,
+				3273CD4525FA1B4B008F3764 /* Info.plist */,
+			);
+			path = DailymotionGithubUsers_NetworkingTests;
+			sourceTree = "<group>";
+		};
+		3273CD5725FA1FDD008F3764 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3273CD5825FA203D008F3764 /* Networking */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3273CD5825FA203D008F3764 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3273CD6125FA20F5008F3764 /* Utils */,
+				3273CD5925FA2055008F3764 /* APIClient.swift */,
+				3273CD5D25FA20C1008F3764 /* APIRequest.swift */,
+				3273CD9025FA2A53008F3764 /* APIError.swift */,
+				3273CD8225FA28D6008F3764 /* APIResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3273CD6125FA20F5008F3764 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3273CD6A25FA21D7008F3764 /* HTTP */,
+				3273CD6625FA2150008F3764 /* RequestBuilder.swift */,
+				3273CD7E25FA22E3008F3764 /* URL+APIRequest.swift */,
+				3273CD8C25FA2924008F3764 /* ResponseError.swift */,
+				3273CD9425FA2A9B008F3764 /* RequestResponse.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3273CD6A25FA21D7008F3764 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				3273CD6225FA2102008F3764 /* HTTPMethod.swift */,
+				3273CD8625FA28F5008F3764 /* HTTPError.swift */,
+				3273CD7125FA2234008F3764 /* Header */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		3273CD7125FA2234008F3764 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				3273CD6D25FA21EE008F3764 /* HTTPHeader.swift */,
+				3273CD7425FA2248008F3764 /* HTTPHeader+ContentType.swift */,
+				3273CD7A25FA229B008F3764 /* HTTPHeader+Authorization.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3273CD3025FA1B4B008F3764 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3273CD4625FA1B4B008F3764 /* DailymotionGithubUsers_Networking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3273CD3425FA1B4B008F3764 /* DailymotionGithubUsers_Networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3273CD4925FA1B4B008F3764 /* Build configuration list for PBXNativeTarget "DailymotionGithubUsers_Networking" */;
+			buildPhases = (
+				3273CD3025FA1B4B008F3764 /* Headers */,
+				3273CD3125FA1B4B008F3764 /* Sources */,
+				3273CD3225FA1B4B008F3764 /* Frameworks */,
+				3273CD3325FA1B4B008F3764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailymotionGithubUsers_Networking;
+			productName = DailymotionGithubUsers_Networking;
+			productReference = 3273CD3525FA1B4B008F3764 /* DailymotionGithubUsers_Networking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3273CD3D25FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3273CD4C25FA1B4B008F3764 /* Build configuration list for PBXNativeTarget "DailymotionGithubUsers_NetworkingTests" */;
+			buildPhases = (
+				3273CD3A25FA1B4B008F3764 /* Sources */,
+				3273CD3B25FA1B4B008F3764 /* Frameworks */,
+				3273CD3C25FA1B4B008F3764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3273CD4125FA1B4B008F3764 /* PBXTargetDependency */,
+			);
+			name = DailymotionGithubUsers_NetworkingTests;
+			productName = DailymotionGithubUsers_NetworkingTests;
+			productReference = 3273CD3E25FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3273CD2C25FA1B4B008F3764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3273CD3425FA1B4B008F3764 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					3273CD3D25FA1B4B008F3764 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 3273CD2F25FA1B4B008F3764 /* Build configuration list for PBXProject "DailymotionGithubUsers_Networking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3273CD2B25FA1B4B008F3764;
+			productRefGroup = 3273CD3625FA1B4B008F3764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3273CD3425FA1B4B008F3764 /* DailymotionGithubUsers_Networking */,
+				3273CD3D25FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3273CD3325FA1B4B008F3764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3273CD3C25FA1B4B008F3764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3273CD3125FA1B4B008F3764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3273CD9525FA2A9B008F3764 /* RequestResponse.swift in Sources */,
+				3273CD7F25FA22E3008F3764 /* URL+APIRequest.swift in Sources */,
+				3273CD5E25FA20C1008F3764 /* APIRequest.swift in Sources */,
+				3273CD5A25FA2055008F3764 /* APIClient.swift in Sources */,
+				3273CD7B25FA229B008F3764 /* HTTPHeader+Authorization.swift in Sources */,
+				3273CD6E25FA21EE008F3764 /* HTTPHeader.swift in Sources */,
+				3273CD9125FA2A53008F3764 /* APIError.swift in Sources */,
+				3273CD8D25FA2924008F3764 /* ResponseError.swift in Sources */,
+				3273CD6325FA2102008F3764 /* HTTPMethod.swift in Sources */,
+				3273CD6725FA2150008F3764 /* RequestBuilder.swift in Sources */,
+				3273CD7525FA2248008F3764 /* HTTPHeader+ContentType.swift in Sources */,
+				3273CD8725FA28F5008F3764 /* HTTPError.swift in Sources */,
+				3273CD8325FA28D6008F3764 /* APIResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3273CD3A25FA1B4B008F3764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3273CD4425FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3273CD4125FA1B4B008F3764 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3273CD3425FA1B4B008F3764 /* DailymotionGithubUsers_Networking */;
+			targetProxy = 3273CD4025FA1B4B008F3764 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3273CD4725FA1B4B008F3764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3273CD4825FA1B4B008F3764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3273CD4A25FA1B4B008F3764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 49QRSQXN7X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DailymotionGithubUsers_Networking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.dailymotiongithubusers.networking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3273CD4B25FA1B4B008F3764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 49QRSQXN7X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DailymotionGithubUsers_Networking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.dailymotiongithubusers.networking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3273CD4D25FA1B4B008F3764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49QRSQXN7X;
+				INFOPLIST_FILE = DailymotionGithubUsers_NetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ak.DailymotionGithubUsers-NetworkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3273CD4E25FA1B4B008F3764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49QRSQXN7X;
+				INFOPLIST_FILE = DailymotionGithubUsers_NetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ak.DailymotionGithubUsers-NetworkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3273CD2F25FA1B4B008F3764 /* Build configuration list for PBXProject "DailymotionGithubUsers_Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3273CD4725FA1B4B008F3764 /* Debug */,
+				3273CD4825FA1B4B008F3764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3273CD4925FA1B4B008F3764 /* Build configuration list for PBXNativeTarget "DailymotionGithubUsers_Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3273CD4A25FA1B4B008F3764 /* Debug */,
+				3273CD4B25FA1B4B008F3764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3273CD4C25FA1B4B008F3764 /* Build configuration list for PBXNativeTarget "DailymotionGithubUsers_NetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3273CD4D25FA1B4B008F3764 /* Debug */,
+				3273CD4E25FA1B4B008F3764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3273CD2C25FA1B4B008F3764 /* Project object */;
+}
