@@ -23,7 +23,7 @@ class UsersResponseTests: XCTestCase {
     
     func testDailymotionUsersJSONDecodesToUserResponse() {
         /// Given
-        let jsonData = UserResponseJSONs.dailymotionUsersJSON.data(using: .utf8)!
+        let jsonData = UserResponseJSONs.dailymotionUsersJSONData
         
         /// When
         let userResponse = try! sut.decode(UsersResponse.self, from: jsonData)
@@ -34,7 +34,7 @@ class UsersResponseTests: XCTestCase {
     
     func testGithubUsersJSONDecodesToUserResponse() {
         /// Given
-        let jsonData = UserResponseJSONs.githubUsersJSON.data(using: .utf8)!
+        let jsonData = UserResponseJSONs.githubUsersJSONData
         
         /// When
         let userResponse = try! sut.decode(UsersResponse.self, from: jsonData)
@@ -43,4 +43,3 @@ class UsersResponseTests: XCTestCase {
         XCTAssertEqual(userResponse.list.count, 3)
     }
 }
-

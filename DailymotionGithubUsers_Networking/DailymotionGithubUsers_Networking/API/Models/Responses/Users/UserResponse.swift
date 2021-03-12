@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserResponse {
+public struct UserResponse {
     public let username: String
     public let photoUrl: URL
     public let service: ThirdPartyService
@@ -22,7 +22,7 @@ extension UserResponse: Decodable {
         case username, avatarUrl = "avatar_360_url"
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let dailymotionContainer = try decoder.container(keyedBy: DailymotionCodingKeys.self)
         let githubContainer = try decoder.container(keyedBy: GithubCodingKeys.self)
         

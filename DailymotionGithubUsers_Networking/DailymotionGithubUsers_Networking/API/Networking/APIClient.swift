@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias ResultCallback<Value> = (Result<Value, Error>) -> Void
+public typealias ResultCallback<Value> = (Result<Value, Error>) -> Void
 
 protocol APIClientProtocol {
     func makeRequest<T: APIRequest>(_ request: T, completion: @escaping ResultCallback<T.Response>)
@@ -51,11 +51,11 @@ class APIClient: APIClientProtocol {
         } else if let error = response.error {
             completion(.failure(APIError.server(error: error.localizedDescription)))
         } else {
-            completion(process(response.data, from: request))
+            completion(map(response.data, from: request))
         }
     }
     
-    private func process<T: APIRequest>(_ data: Data?, from: T) -> Result<T.Response, Error> {
+    private func map<T: APIRequest>(_ data: Data?, from: T) -> Result<T.Response, Error> {
         if let data = data {
             do {
                 let apiResponse = try jsonDecoder.decode(APIResponse<T.Response>.self, from: data)

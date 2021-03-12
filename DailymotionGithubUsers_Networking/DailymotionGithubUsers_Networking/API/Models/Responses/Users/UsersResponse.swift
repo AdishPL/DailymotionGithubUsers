@@ -8,7 +8,7 @@
 import Foundation
 
 struct UsersResponse {
-    public let list: [UserResponse]
+    let list: [UserResponse]
 }
 
 extension UsersResponse: Decodable {

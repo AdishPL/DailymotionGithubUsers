@@ -8,7 +8,7 @@
 import Foundation
 
 enum UserResponseJSONs {
-    static let dailymotionUsersJSON = """
+    static let dailymotionUsersJSONData = """
     {
       "page": 1,
       "limit": 10,
@@ -59,9 +59,9 @@ enum UserResponseJSONs {
       ]
     }
     
-    """
+    """.data(using: .utf8)!
     
-    static let githubUsersJSON = """
+    static let githubUsersJSONData = """
     [
       {
         "login": "mojombo",
@@ -124,5 +124,5 @@ enum UserResponseJSONs {
         "site_admin": false
       }
     ]
-    """
+    """.data(using: .utf8)!
 }

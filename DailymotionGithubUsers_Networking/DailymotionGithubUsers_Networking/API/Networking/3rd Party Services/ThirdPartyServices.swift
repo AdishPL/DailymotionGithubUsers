@@ -16,9 +16,9 @@ extension ThirdPartyService {
     var baseUrl: URL {
         switch self {
         case .dailymotion:
-            return URL(string: "https://api.dailymotion.com/")!
+            return URL(string: "https://api.dailymotion.com")!
         case .github:
-            return URL(string: "https://api.github.com/")!
+            return URL(string: "https://api.github.com")!
         }
     }
 }
