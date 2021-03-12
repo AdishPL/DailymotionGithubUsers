@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		323F030E25FBDC9800A73D4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F030D25FBDC9800A73D4E /* AppDelegate.swift */; };
+		323F031725FBDC9800A73D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323F031625FBDC9800A73D4E /* Assets.xcassets */; };
+		323F031A25FBDC9800A73D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323F031825FBDC9800A73D4E /* LaunchScreen.storyboard */; };
+		323F032525FBDC9800A73D4E /* DailymotionGithubUsers_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F032425FBDC9800A73D4E /* DailymotionGithubUsers_AppTests.swift */; };
+		323F033025FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F032F25FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests.swift */; };
+		323F035725FBE0E900A73D4E /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323F035225FBE0E800A73D4E /* OpenSans-SemiBold.ttf */; };
+		323F035825FBE0E900A73D4E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323F035325FBE0E800A73D4E /* OpenSans-Bold.ttf */; };
+		323F035925FBE0E900A73D4E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323F035425FBE0E800A73D4E /* OpenSans-Regular.ttf */; };
+		323F035A25FBE0E900A73D4E /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323F035625FBE0E900A73D4E /* Montserrat-Bold.ttf */; };
+		323F037225FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323F037125FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework */; };
+		323F037325FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 323F037125FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		323F037825FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323F037725FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework */; };
+		323F037925FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 323F037725FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		323F03A725FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323F03A625FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework */; };
+		323F03A825FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 323F03A625FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		323F032125FBDC9800A73D4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323F030225FBDC9800A73D4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323F030925FBDC9800A73D4E;
+			remoteInfo = DailymotionGithubUsers_App;
+		};
+		323F032C25FBDC9800A73D4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323F030225FBDC9800A73D4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323F030925FBDC9800A73D4E;
+			remoteInfo = DailymotionGithubUsers_App;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		323F037425FBE2CB00A73D4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				323F03A825FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework in Embed Frameworks */,
+				323F037925FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework in Embed Frameworks */,
+				323F037325FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		323F030A25FBDC9800A73D4E /* DailymotionGithubUsers_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailymotionGithubUsers_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		323F030D25FBDC9800A73D4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		323F031625FBDC9800A73D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		323F031925FBDC9800A73D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		323F031B25FBDC9800A73D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323F032025FBDC9800A73D4E /* DailymotionGithubUsers_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailymotionGithubUsers_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323F032425FBDC9800A73D4E /* DailymotionGithubUsers_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionGithubUsers_AppTests.swift; sourceTree = "<group>"; };
+		323F032625FBDC9800A73D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323F032B25FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailymotionGithubUsers_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323F032F25FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionGithubUsers_AppUITests.swift; sourceTree = "<group>"; };
+		323F033125FBDC9800A73D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323F035225FBE0E800A73D4E /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		323F035325FBE0E800A73D4E /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		323F035425FBE0E800A73D4E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		323F035625FBE0E900A73D4E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		323F037125FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DailymotionGithubUsers_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		323F037725FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DailymotionGithubUsers_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		323F03A625FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DailymotionGithubUsers_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		323F030725FBDC9800A73D4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323F03A725FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework in Frameworks */,
+				323F037825FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework in Frameworks */,
+				323F037225FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323F031D25FBDC9800A73D4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323F032825FBDC9800A73D4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		323F030125FBDC9800A73D4E = {
+			isa = PBXGroup;
+			children = (
+				323F030C25FBDC9800A73D4E /* DailymotionGithubUsers_App */,
+				323F032325FBDC9800A73D4E /* DailymotionGithubUsers_AppTests */,
+				323F032E25FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests */,
+				323F030B25FBDC9800A73D4E /* Products */,
+				323F037025FBE2CB00A73D4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		323F030B25FBDC9800A73D4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				323F030A25FBDC9800A73D4E /* DailymotionGithubUsers_App.app */,
+				323F032025FBDC9800A73D4E /* DailymotionGithubUsers_AppTests.xctest */,
+				323F032B25FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		323F030C25FBDC9800A73D4E /* DailymotionGithubUsers_App */ = {
+			isa = PBXGroup;
+			children = (
+				323F034F25FBE0BA00A73D4E /* Resources */,
+				323F030D25FBDC9800A73D4E /* AppDelegate.swift */,
+				323F031B25FBDC9800A73D4E /* Info.plist */,
+			);
+			path = DailymotionGithubUsers_App;
+			sourceTree = "<group>";
+		};
+		323F032325FBDC9800A73D4E /* DailymotionGithubUsers_AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				323F032425FBDC9800A73D4E /* DailymotionGithubUsers_AppTests.swift */,
+				323F032625FBDC9800A73D4E /* Info.plist */,
+			);
+			path = DailymotionGithubUsers_AppTests;
+			sourceTree = "<group>";
+		};
+		323F032E25FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				323F032F25FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests.swift */,
+				323F033125FBDC9800A73D4E /* Info.plist */,
+			);
+			path = DailymotionGithubUsers_AppUITests;
+			sourceTree = "<group>";
+		};
+		323F034F25FBE0BA00A73D4E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				323F035025FBE0E800A73D4E /* Fonts */,
+				323F031825FBDC9800A73D4E /* LaunchScreen.storyboard */,
+				323F031625FBDC9800A73D4E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		323F035025FBE0E800A73D4E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				323F035125FBE0E800A73D4E /* Open Sans */,
+				323F035525FBE0E800A73D4E /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		323F035125FBE0E800A73D4E /* Open Sans */ = {
+			isa = PBXGroup;
+			children = (
+				323F035225FBE0E800A73D4E /* OpenSans-SemiBold.ttf */,
+				323F035325FBE0E800A73D4E /* OpenSans-Bold.ttf */,
+				323F035425FBE0E800A73D4E /* OpenSans-Regular.ttf */,
+			);
+			path = "Open Sans";
+			sourceTree = "<group>";
+		};
+		323F035525FBE0E800A73D4E /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				323F035625FBE0E900A73D4E /* Montserrat-Bold.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		323F037025FBE2CB00A73D4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				323F037125FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework */,
+				323F037725FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework */,
+				323F03A625FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		323F030925FBDC9800A73D4E /* DailymotionGithubUsers_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323F033425FBDC9800A73D4E /* Build configuration list for PBXNativeTarget "DailymotionGithubUsers_App" */;
+			buildPhases = (
+				323F030625FBDC9800A73D4E /* Sources */,
+				323F030725FBDC9800A73D4E /* Frameworks */,
+				323F030825FBDC9800A73D4E /* Resources */,
+				323F037425FBE2CB00A73D4E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailymotionGithubUsers_App;
+			productName = DailymotionGithubUsers_App;
+			productReference = 323F030A25FBDC9800A73D4E /* DailymotionGithubUsers_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		323F031F25FBDC9800A73D4E /* DailymotionGithubUsers_AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323F033725FBDC9800A73D4E /* Build configuration list for PBXNativeTarget "DailymotionGithubUsers_AppTests" */;
+			buildPhases = (
+				323F031C25FBDC9800A73D4E /* Sources */,
+				323F031D25FBDC9800A73D4E /* Frameworks */,
+				323F031E25FBDC9800A73D4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323F032225FBDC9800A73D4E /* PBXTargetDependency */,
+			);
+			name = DailymotionGithubUsers_AppTests;
+			productName = DailymotionGithubUsers_AppTests;
+			productReference = 323F032025FBDC9800A73D4E /* DailymotionGithubUsers_AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		323F032A25FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323F033A25FBDC9800A73D4E /* Build configuration list for PBXNativeTarget "DailymotionGithubUsers_AppUITests" */;
+			buildPhases = (
+				323F032725FBDC9800A73D4E /* Sources */,
+				323F032825FBDC9800A73D4E /* Frameworks */,
+				323F032925FBDC9800A73D4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323F032D25FBDC9800A73D4E /* PBXTargetDependency */,
+			);
+			name = DailymotionGithubUsers_AppUITests;
+			productName = DailymotionGithubUsers_AppUITests;
+			productReference = 323F032B25FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		323F030225FBDC9800A73D4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					323F030925FBDC9800A73D4E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					323F031F25FBDC9800A73D4E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 323F030925FBDC9800A73D4E;
+					};
+					323F032A25FBDC9800A73D4E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 323F030925FBDC9800A73D4E;
+					};
+				};
+			};
+			buildConfigurationList = 323F030525FBDC9800A73D4E /* Build configuration list for PBXProject "DailymotionGithubUsers_App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 323F030125FBDC9800A73D4E;
+			productRefGroup = 323F030B25FBDC9800A73D4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				323F030925FBDC9800A73D4E /* DailymotionGithubUsers_App */,
+				323F031F25FBDC9800A73D4E /* DailymotionGithubUsers_AppTests */,
+				323F032A25FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		323F030825FBDC9800A73D4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323F035925FBE0E900A73D4E /* OpenSans-Regular.ttf in Resources */,
+				323F031A25FBDC9800A73D4E /* LaunchScreen.storyboard in Resources */,
+				323F035A25FBE0E900A73D4E /* Montserrat-Bold.ttf in Resources */,
+				323F035725FBE0E900A73D4E /* OpenSans-SemiBold.ttf in Resources */,
+				323F035825FBE0E900A73D4E /* OpenSans-Bold.ttf in Resources */,
+				323F031725FBDC9800A73D4E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323F031E25FBDC9800A73D4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323F032925FBDC9800A73D4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		323F030625FBDC9800A73D4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323F030E25FBDC9800A73D4E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323F031C25FBDC9800A73D4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323F032525FBDC9800A73D4E /* DailymotionGithubUsers_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323F032725FBDC9800A73D4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323F033025FBDC9800A73D4E /* DailymotionGithubUsers_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		323F032225FBDC9800A73D4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323F030925FBDC9800A73D4E /* DailymotionGithubUsers_App */;
+			targetProxy = 323F032125FBDC9800A73D4E /* PBXContainerItemProxy */;
+		};
+		323F032D25FBDC9800A73D4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323F030925FBDC9800A73D4E /* DailymotionGithubUsers_App */;
+			targetProxy = 323F032C25FBDC9800A73D4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		323F031825FBDC9800A73D4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323F031925FBDC9800A73D4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		323F033225FBDC9800A73D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		323F033325FBDC9800A73D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		323F033525FBDC9800A73D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49QRSQXN7X;
+				INFOPLIST_FILE = DailymotionGithubUsers_App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.dailymotiongithubusers.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		323F033625FBDC9800A73D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49QRSQXN7X;
+				INFOPLIST_FILE = DailymotionGithubUsers_App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.dailymotiongithubusers.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		323F033825FBDC9800A73D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49QRSQXN7X;
+				INFOPLIST_FILE = DailymotionGithubUsers_AppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ak.DailymotionGithubUsers-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailymotionGithubUsers_App.app/DailymotionGithubUsers_App";
+			};
+			name = Debug;
+		};
+		323F033925FBDC9800A73D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49QRSQXN7X;
+				INFOPLIST_FILE = DailymotionGithubUsers_AppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ak.DailymotionGithubUsers-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailymotionGithubUsers_App.app/DailymotionGithubUsers_App";
+			};
+			name = Release;
+		};
+		323F033B25FBDC9800A73D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49QRSQXN7X;
+				INFOPLIST_FILE = DailymotionGithubUsers_AppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ak.DailymotionGithubUsers-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailymotionGithubUsers_App;
+			};
+			name = Debug;
+		};
+		323F033C25FBDC9800A73D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49QRSQXN7X;
+				INFOPLIST_FILE = DailymotionGithubUsers_AppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ak.DailymotionGithubUsers-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailymotionGithubUsers_App;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		323F030525FBDC9800A73D4E /* Build configuration list for PBXProject "DailymotionGithubUsers_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323F033225FBDC9800A73D4E /* Debug */,
+				323F033325FBDC9800A73D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323F033425FBDC9800A73D4E /* Build configuration list for PBXNativeTarget "DailymotionGithubUsers_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323F033525FBDC9800A73D4E /* Debug */,
+				323F033625FBDC9800A73D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323F033725FBDC9800A73D4E /* Build configuration list for PBXNativeTarget "DailymotionGithubUsers_AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323F033825FBDC9800A73D4E /* Debug */,
+				323F033925FBDC9800A73D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323F033A25FBDC9800A73D4E /* Build configuration list for PBXNativeTarget "DailymotionGithubUsers_AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323F033B25FBDC9800A73D4E /* Debug */,
+				323F033C25FBDC9800A73D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 323F030225FBDC9800A73D4E /* Project object */;
+}

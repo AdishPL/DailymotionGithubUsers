@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323F036025FBE22400A73D4E /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F035F25FBE22400A73D4E /* NiblessViewController.swift */; };
+		323F036625FBE23A00A73D4E /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F036525FBE23A00A73D4E /* NiblessView.swift */; };
+		323F036A25FBE26200A73D4E /* ViewSpecificController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F036925FBE26200A73D4E /* ViewSpecificController.swift */; };
+		323F03D425FBF54500A73D4E /* ViewShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03D325FBF54500A73D4E /* ViewShowable.swift */; };
+		323F040425FBFC8B00A73D4E /* UINavigationController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F040325FBFC8B00A73D4E /* UINavigationController+Helpers.swift */; };
+		323F040825FBFCFA00A73D4E /* StyledNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F040725FBFCFA00A73D4E /* StyledNavigationController.swift */; };
+		323F040C25FBFD2600A73D4E /* UINavigationBar+Stylization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F040B25FBFD2600A73D4E /* UINavigationBar+Stylization.swift */; };
 		329DC4F725FBD09C006658E5 /* DailymotionGithubUsers_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329DC4ED25FBD09C006658E5 /* DailymotionGithubUsers_UI.framework */; };
 		329DC4FC25FBD09C006658E5 /* DailymotionGithubUsers_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DC4FB25FBD09C006658E5 /* DailymotionGithubUsers_UITests.swift */; };
 		329DC4FE25FBD09C006658E5 /* DailymotionGithubUsers_UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 329DC4F025FBD09C006658E5 /* DailymotionGithubUsers_UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		323F035F25FBE22400A73D4E /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		323F036525FBE23A00A73D4E /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
+		323F036925FBE26200A73D4E /* ViewSpecificController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSpecificController.swift; sourceTree = "<group>"; };
+		323F03D325FBF54500A73D4E /* ViewShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewShowable.swift; sourceTree = "<group>"; };
+		323F040325FBFC8B00A73D4E /* UINavigationController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Helpers.swift"; sourceTree = "<group>"; };
+		323F040725FBFCFA00A73D4E /* StyledNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledNavigationController.swift; sourceTree = "<group>"; };
+		323F040B25FBFD2600A73D4E /* UINavigationBar+Stylization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Stylization.swift"; sourceTree = "<group>"; };
 		329DC4ED25FBD09C006658E5 /* DailymotionGithubUsers_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DailymotionGithubUsers_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329DC4F025FBD09C006658E5 /* DailymotionGithubUsers_UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailymotionGithubUsers_UI.h; sourceTree = "<group>"; };
 		329DC4F125FBD09C006658E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +80,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323F035E25FBE20100A73D4E /* Nibless Components */ = {
+			isa = PBXGroup;
+			children = (
+				323F035F25FBE22400A73D4E /* NiblessViewController.swift */,
+				323F036525FBE23A00A73D4E /* NiblessView.swift */,
+				323F036925FBE26200A73D4E /* ViewSpecificController.swift */,
+			);
+			path = "Nibless Components";
+			sourceTree = "<group>";
+		};
+		323F03D225FBF53900A73D4E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				323F03D325FBF54500A73D4E /* ViewShowable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		329DC4E325FBD09B006658E5 = {
 			isa = PBXGroup;
 			children = (
@@ -87,11 +119,16 @@
 		329DC4EF25FBD09C006658E5 /* DailymotionGithubUsers_UI */ = {
 			isa = PBXGroup;
 			children = (
+				323F03D225FBF53900A73D4E /* Protocols */,
+				323F035E25FBE20100A73D4E /* Nibless Components */,
 				329DC53425FBD8D3006658E5 /* Factories */,
 				329DC51525FBD43E006658E5 /* Design Palette */,
 				329DC51125FBD36C006658E5 /* AppLayoutMargin.swift */,
 				329DC52025FBD5FB006658E5 /* AppTextStyle.swift */,
 				329DC52425FBD6D6006658E5 /* AppFontSize.swift */,
+				323F040325FBFC8B00A73D4E /* UINavigationController+Helpers.swift */,
+				323F040725FBFCFA00A73D4E /* StyledNavigationController.swift */,
+				323F040B25FBFD2600A73D4E /* UINavigationBar+Stylization.swift */,
 				329DC52E25FBD892006658E5 /* Colors.swift */,
 				329DC4F025FBD09C006658E5 /* DailymotionGithubUsers_UI.h */,
 				329DC4F125FBD09C006658E5 /* Info.plist */,
@@ -235,12 +272,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				323F040825FBFCFA00A73D4E /* StyledNavigationController.swift in Sources */,
 				329DC52B25FBD7C8006658E5 /* LightAppPalette.swift in Sources */,
+				323F03D425FBF54500A73D4E /* ViewShowable.swift in Sources */,
+				323F036A25FBE26200A73D4E /* ViewSpecificController.swift in Sources */,
+				323F040C25FBFD2600A73D4E /* UINavigationBar+Stylization.swift in Sources */,
+				323F036025FBE22400A73D4E /* NiblessViewController.swift in Sources */,
 				329DC52525FBD6D6006658E5 /* AppFontSize.swift in Sources */,
 				329DC52125FBD5FB006658E5 /* AppTextStyle.swift in Sources */,
 				329DC52F25FBD892006658E5 /* Colors.swift in Sources */,
 				329DC51225FBD36C006658E5 /* AppLayoutMargin.swift in Sources */,
 				329DC51D25FBD4CC006658E5 /* DesignPaletteProtocol.swift in Sources */,
+				323F040425FBFC8B00A73D4E /* UINavigationController+Helpers.swift in Sources */,
+				323F036625FBE23A00A73D4E /* NiblessView.swift in Sources */,
 				329DC51725FBD47A006658E5 /* AppDesign.swift in Sources */,
 				329DC53625FBD8EC006658E5 /* UIFont+Factory.swift in Sources */,
 			);
