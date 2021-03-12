@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DailymotionGithubUsers_UI/DailymotionGithubUsers_UI.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DailymotionGithubUsers_Networking/DailymotionGithubUsers_Networking.xcodeproj">
    </FileRef>
 </Workspace>
