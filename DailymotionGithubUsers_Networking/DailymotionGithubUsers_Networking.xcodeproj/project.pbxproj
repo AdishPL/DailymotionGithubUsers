@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3273CD3F25FA1B4B008F3764 /* DailymotionGithubUsers_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3273CD3525FA1B4B008F3764 /* DailymotionGithubUsers_Networking.framework */; };
-		3273CD4425FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD4325FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.swift */; };
 		3273CD4625FA1B4B008F3764 /* DailymotionGithubUsers_Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3273CD3825FA1B4B008F3764 /* DailymotionGithubUsers_Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3273CD5A25FA2055008F3764 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD5925FA2055008F3764 /* APIClient.swift */; };
 		3273CD5E25FA20C1008F3764 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD5D25FA20C1008F3764 /* APIRequest.swift */; };
@@ -23,8 +22,18 @@
 		3273CD8D25FA2924008F3764 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD8C25FA2924008F3764 /* ResponseError.swift */; };
 		3273CD9125FA2A53008F3764 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD9025FA2A53008F3764 /* APIError.swift */; };
 		3273CD9525FA2A9B008F3764 /* RequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD9425FA2A9B008F3764 /* RequestResponse.swift */; };
-		3273CD9D25FA2F4A008F3764 /* APIClient+Dailymotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CD9C25FA2F4A008F3764 /* APIClient+Dailymotion.swift */; };
-		3273CDA325FA2FBD008F3764 /* APIClient+Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDA225FA2FBD008F3764 /* APIClient+Github.swift */; };
+		3273CDAA25FA3221008F3764 /* GetUsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDA925FA3221008F3764 /* GetUsersRequest.swift */; };
+		3273CDB325FA33C7008F3764 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDB225FA33C7008F3764 /* UsersResponse.swift */; };
+		3273CDBC25FA3F59008F3764 /* UsersResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDBB25FA3F59008F3764 /* UsersResponseTests.swift */; };
+		3273CDC025FA5F34008F3764 /* ThirdPartyServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDBF25FA5F34008F3764 /* ThirdPartyServices.swift */; };
+		3273CDC925FA79E9008F3764 /* APIDataTaskCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDC825FA79E9008F3764 /* APIDataTaskCreator.swift */; };
+		3273CDCE25FA8480008F3764 /* MockableAPIDataCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDCD25FA8480008F3764 /* MockableAPIDataCreator.swift */; };
+		3273CDD425FA853F008F3764 /* URL+Localhost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDD325FA853F008F3764 /* URL+Localhost.swift */; };
+		3273CDD925FA8583008F3764 /* HTTPURLResponse+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDD825FA8583008F3764 /* HTTPURLResponse+Factory.swift */; };
+		3273CDE325FA891C008F3764 /* RequestBuilder+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDE225FA891C008F3764 /* RequestBuilder+Factory.swift */; };
+		3273CDE825FA8F4B008F3764 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273CDE725FA8F4B008F3764 /* APIClientTests.swift */; };
+		329DC4BF25FB5C49006658E5 /* UserResponseJSONs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DC4BE25FB5C49006658E5 /* UserResponseJSONs.swift */; };
+		329DC4C525FB615E006658E5 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DC4C425FB615E006658E5 /* UserResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +51,6 @@
 		3273CD3825FA1B4B008F3764 /* DailymotionGithubUsers_Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailymotionGithubUsers_Networking.h; sourceTree = "<group>"; };
 		3273CD3925FA1B4B008F3764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3273CD3E25FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailymotionGithubUsers_NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3273CD4325FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionGithubUsers_NetworkingTests.swift; sourceTree = "<group>"; };
 		3273CD4525FA1B4B008F3764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3273CD5925FA2055008F3764 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		3273CD5D25FA20C1008F3764 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
@@ -57,8 +65,18 @@
 		3273CD8C25FA2924008F3764 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
 		3273CD9025FA2A53008F3764 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		3273CD9425FA2A9B008F3764 /* RequestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResponse.swift; sourceTree = "<group>"; };
-		3273CD9C25FA2F4A008F3764 /* APIClient+Dailymotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+Dailymotion.swift"; sourceTree = "<group>"; };
-		3273CDA225FA2FBD008F3764 /* APIClient+Github.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+Github.swift"; sourceTree = "<group>"; };
+		3273CDA925FA3221008F3764 /* GetUsersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersRequest.swift; sourceTree = "<group>"; };
+		3273CDB225FA33C7008F3764 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
+		3273CDBB25FA3F59008F3764 /* UsersResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponseTests.swift; sourceTree = "<group>"; };
+		3273CDBF25FA5F34008F3764 /* ThirdPartyServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyServices.swift; sourceTree = "<group>"; };
+		3273CDC825FA79E9008F3764 /* APIDataTaskCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataTaskCreator.swift; sourceTree = "<group>"; };
+		3273CDCD25FA8480008F3764 /* MockableAPIDataCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockableAPIDataCreator.swift; sourceTree = "<group>"; };
+		3273CDD325FA853F008F3764 /* URL+Localhost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Localhost.swift"; sourceTree = "<group>"; };
+		3273CDD825FA8583008F3764 /* HTTPURLResponse+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Factory.swift"; sourceTree = "<group>"; };
+		3273CDE225FA891C008F3764 /* RequestBuilder+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestBuilder+Factory.swift"; sourceTree = "<group>"; };
+		3273CDE725FA8F4B008F3764 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		329DC4BE25FB5C49006658E5 /* UserResponseJSONs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseJSONs.swift; sourceTree = "<group>"; };
+		329DC4C425FB615E006658E5 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +129,10 @@
 		3273CD4225FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				3273CD4325FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.swift */,
+				3273CDCC25FA83D3008F3764 /* Mocks */,
+				3273CDD725FA8575008F3764 /* Helpers */,
+				3273CDE625FA8F2F008F3764 /* API */,
+				3273CDBA25FA3F22008F3764 /* Models */,
 				3273CD4525FA1B4B008F3764 /* Info.plist */,
 			);
 			path = DailymotionGithubUsers_NetworkingTests;
@@ -120,6 +141,8 @@
 		3273CD5725FA1FDD008F3764 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				3273CDAF25FA3363008F3764 /* Models */,
+				3273CDA625FA30A1008F3764 /* Endpoints */,
 				3273CD5825FA203D008F3764 /* Networking */,
 			);
 			path = API;
@@ -131,6 +154,7 @@
 				3273CD9B25FA2F29008F3764 /* 3rd Party Services */,
 				3273CD6125FA20F5008F3764 /* Utils */,
 				3273CD5925FA2055008F3764 /* APIClient.swift */,
+				3273CDC825FA79E9008F3764 /* APIDataTaskCreator.swift */,
 				3273CD5D25FA20C1008F3764 /* APIRequest.swift */,
 				3273CD9025FA2A53008F3764 /* APIError.swift */,
 				3273CD8225FA28D6008F3764 /* APIResponse.swift */,
@@ -173,10 +197,101 @@
 		3273CD9B25FA2F29008F3764 /* 3rd Party Services */ = {
 			isa = PBXGroup;
 			children = (
-				3273CD9C25FA2F4A008F3764 /* APIClient+Dailymotion.swift */,
-				3273CDA225FA2FBD008F3764 /* APIClient+Github.swift */,
+				3273CDBF25FA5F34008F3764 /* ThirdPartyServices.swift */,
 			);
 			path = "3rd Party Services";
+			sourceTree = "<group>";
+		};
+		3273CDA625FA30A1008F3764 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				3273CDA725FA30AA008F3764 /* GET */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		3273CDA725FA30AA008F3764 /* GET */ = {
+			isa = PBXGroup;
+			children = (
+				3273CDA825FA30B1008F3764 /* Users */,
+			);
+			path = GET;
+			sourceTree = "<group>";
+		};
+		3273CDA825FA30B1008F3764 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				3273CDA925FA3221008F3764 /* GetUsersRequest.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		3273CDAF25FA3363008F3764 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3273CDB025FA3396008F3764 /* Responses */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3273CDB025FA3396008F3764 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				3273CDB125FA33B1008F3764 /* Users */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		3273CDB125FA33B1008F3764 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				3273CDB225FA33C7008F3764 /* UsersResponse.swift */,
+				329DC4C425FB615E006658E5 /* UserResponse.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		3273CDBA25FA3F22008F3764 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3273CDBB25FA3F59008F3764 /* UsersResponseTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3273CDCC25FA83D3008F3764 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				329DC4BD25FB5C18006658E5 /* JSON */,
+				3273CDCD25FA8480008F3764 /* MockableAPIDataCreator.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3273CDD725FA8575008F3764 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3273CDD325FA853F008F3764 /* URL+Localhost.swift */,
+				3273CDD825FA8583008F3764 /* HTTPURLResponse+Factory.swift */,
+				3273CDE225FA891C008F3764 /* RequestBuilder+Factory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3273CDE625FA8F2F008F3764 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3273CDE725FA8F4B008F3764 /* APIClientTests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		329DC4BD25FB5C18006658E5 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				329DC4BE25FB5C49006658E5 /* UserResponseJSONs.swift */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +359,7 @@
 					};
 					3273CD3D25FA1B4B008F3764 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -292,17 +408,20 @@
 				3273CD7F25FA22E3008F3764 /* URL+APIRequest.swift in Sources */,
 				3273CD5E25FA20C1008F3764 /* APIRequest.swift in Sources */,
 				3273CD5A25FA2055008F3764 /* APIClient.swift in Sources */,
+				3273CDC925FA79E9008F3764 /* APIDataTaskCreator.swift in Sources */,
 				3273CD7B25FA229B008F3764 /* HTTPHeader+Authorization.swift in Sources */,
 				3273CD6E25FA21EE008F3764 /* HTTPHeader.swift in Sources */,
+				3273CDC025FA5F34008F3764 /* ThirdPartyServices.swift in Sources */,
 				3273CD9125FA2A53008F3764 /* APIError.swift in Sources */,
 				3273CD8D25FA2924008F3764 /* ResponseError.swift in Sources */,
 				3273CD6325FA2102008F3764 /* HTTPMethod.swift in Sources */,
-				3273CD9D25FA2F4A008F3764 /* APIClient+Dailymotion.swift in Sources */,
 				3273CD6725FA2150008F3764 /* RequestBuilder.swift in Sources */,
+				3273CDAA25FA3221008F3764 /* GetUsersRequest.swift in Sources */,
+				3273CDB325FA33C7008F3764 /* UsersResponse.swift in Sources */,
 				3273CD7525FA2248008F3764 /* HTTPHeader+ContentType.swift in Sources */,
-				3273CDA325FA2FBD008F3764 /* APIClient+Github.swift in Sources */,
 				3273CD8725FA28F5008F3764 /* HTTPError.swift in Sources */,
 				3273CD8325FA28D6008F3764 /* APIResponse.swift in Sources */,
+				329DC4C525FB615E006658E5 /* UserResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +429,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3273CD4425FA1B4B008F3764 /* DailymotionGithubUsers_NetworkingTests.swift in Sources */,
+				3273CDCE25FA8480008F3764 /* MockableAPIDataCreator.swift in Sources */,
+				3273CDE325FA891C008F3764 /* RequestBuilder+Factory.swift in Sources */,
+				3273CDD925FA8583008F3764 /* HTTPURLResponse+Factory.swift in Sources */,
+				329DC4BF25FB5C49006658E5 /* UserResponseJSONs.swift in Sources */,
+				3273CDE825FA8F4B008F3764 /* APIClientTests.swift in Sources */,
+				3273CDBC25FA3F59008F3764 /* UsersResponseTests.swift in Sources */,
+				3273CDD425FA853F008F3764 /* URL+Localhost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49QRSQXN7X;
 				INFOPLIST_FILE = DailymotionGithubUsers_NetworkingTests/Info.plist;
@@ -514,6 +640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ak.DailymotionGithubUsers-NetworkingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -523,6 +650,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49QRSQXN7X;
 				INFOPLIST_FILE = DailymotionGithubUsers_NetworkingTests/Info.plist;

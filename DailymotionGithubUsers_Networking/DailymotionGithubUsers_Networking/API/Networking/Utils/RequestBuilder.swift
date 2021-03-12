@@ -7,13 +7,7 @@
 
 import Foundation
 
-protocol RequestBuildable {
-    func endpointRequest<T: APIRequest>(from request: T) throws -> URLRequest
-    
-    var baseEndpointUrl: URL { get }
-}
-
-struct URLRequestBuilder: RequestBuildable {
+struct URLRequestBuilder {
     let baseEndpointUrl: URL
     
     init(baseEndpointInURL: URL) {
