@@ -6,12 +6,13 @@
 //
 
 import DailymotionGithubUsers_UI
+import DailymotionGithubUsers_Core
 
 final class UserCellModel: CellViewModel {
-    let title: String
+    let user: User
 
-    init(title: String, onCellClicked: @escaping () -> Void) {
-        self.title = title
+    init(user: User, onCellClicked: @escaping () -> Void) {
+        self.user = user
         super.init(reuseIdentifier: NSStringFromClass(UserTableViewCell.self),
                    onCellClicked: onCellClicked)
     }

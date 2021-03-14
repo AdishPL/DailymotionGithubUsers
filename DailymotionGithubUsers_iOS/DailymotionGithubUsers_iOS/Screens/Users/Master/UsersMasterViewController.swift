@@ -10,7 +10,7 @@ import UIKit
 
 public final class UsersMasterViewController: Viewer, ViewSpecificController {
     typealias RootView = UsersMasterRootView
-    
+        
     // MARK: - Managing the View
 
     public override func loadView() {
@@ -19,7 +19,7 @@ public final class UsersMasterViewController: Viewer, ViewSpecificController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
+        presenter.bind()
     }
 }
 
@@ -27,7 +27,11 @@ public final class UsersMasterViewController: Viewer, ViewSpecificController {
 
 extension UsersMasterViewController: UsersMasterViewable {
     func load(_ dataSource: [CellViewModel]) {
-        
+        rootView.loadDataSource(dataSource)
+    }
+    
+    func showLoader(_ enabled: Bool) {
+        rootView.toggleLoaderVisibility()
     }
 }
 

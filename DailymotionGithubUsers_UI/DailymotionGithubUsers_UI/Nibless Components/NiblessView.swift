@@ -12,6 +12,8 @@ open class NiblessView: UIView {
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        constructHierarchy()
+        activateConstraints()
     }
     
     @available(*, unavailable,
@@ -28,8 +30,6 @@ open class NiblessView: UIView {
         }
         
         style()
-        constructHierarchy()
-        activateConstraints()
         
         hierarchyNotReady = false
     }

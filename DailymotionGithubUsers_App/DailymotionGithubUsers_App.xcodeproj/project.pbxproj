@@ -22,6 +22,9 @@
 		323F037925FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 323F037725FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		323F03A725FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323F03A625FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework */; };
 		323F03A825FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 323F03A625FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32C02BE825FE3E6500E77353 /* DailymotionGithubUsers_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323F037125FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework */; };
+		32C02BEE25FE3E9500E77353 /* DailymotionGithubUsers_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C02BED25FE3E9500E77353 /* DailymotionGithubUsers_Core.framework */; };
+		32C02BEF25FE3E9500E77353 /* DailymotionGithubUsers_Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32C02BED25FE3E9500E77353 /* DailymotionGithubUsers_Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 				323F03A825FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework in Embed Frameworks */,
 				323F037925FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework in Embed Frameworks */,
 				323F037325FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework in Embed Frameworks */,
+				32C02BEF25FE3E9500E77353 /* DailymotionGithubUsers_Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +80,7 @@
 		323F037125FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DailymotionGithubUsers_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		323F037725FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DailymotionGithubUsers_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		323F03A625FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DailymotionGithubUsers_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C02BED25FE3E9500E77353 /* DailymotionGithubUsers_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DailymotionGithubUsers_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +88,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C02BE825FE3E6500E77353 /* DailymotionGithubUsers_Networking.framework in Frameworks */,
 				323F03A725FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework in Frameworks */,
 				323F037825FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework in Frameworks */,
 				323F037225FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework in Frameworks */,
+				32C02BEE25FE3E9500E77353 /* DailymotionGithubUsers_Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				323F037125FBE2CB00A73D4E /* DailymotionGithubUsers_Networking.framework */,
+				32C02BED25FE3E9500E77353 /* DailymotionGithubUsers_Core.framework */,
 				323F037725FBE2E900A73D4E /* DailymotionGithubUsers_UI.framework */,
 				323F03A625FBE36F00A73D4E /* DailymotionGithubUsers_iOS.framework */,
 			);

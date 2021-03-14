@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum ThirdPartyService {
+public enum ThirdPartyService: String {
     case dailymotion
     case github
 }

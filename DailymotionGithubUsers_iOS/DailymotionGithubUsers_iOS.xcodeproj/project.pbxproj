@@ -35,6 +35,14 @@
 		32C02B9525FE2F2A00E77353 /* UsersMasterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B9425FE2F2A00E77353 /* UsersMasterPresenter.swift */; };
 		32C02B9A25FE35B500E77353 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B9925FE35B500E77353 /* UserTableViewCell.swift */; };
 		32C02BA025FE366800E77353 /* UserCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B9F25FE366800E77353 /* UserCellModel.swift */; };
+		32C02BF325FE431000E77353 /* DailymotionGithubUsers_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C02BF225FE431000E77353 /* DailymotionGithubUsers_Core.framework */; };
+		32C02C0F25FE544A00E77353 /* UsersViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02C0E25FE544A00E77353 /* UsersViewFactory.swift */; };
+		32C02C1525FE54C600E77353 /* UsersMasterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02C1425FE54C600E77353 /* UsersMasterRouter.swift */; };
+		32C02C2125FE6F5300E77353 /* UserDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02C2025FE6F5300E77353 /* UserDetailContract.swift */; };
+		32C02C2525FE6FD500E77353 /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02C2425FE6FD500E77353 /* UserDetailPresenter.swift */; };
+		32C02C2925FE6FFE00E77353 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02C2825FE6FFE00E77353 /* UserDetailViewController.swift */; };
+		32C02C2D25FE700A00E77353 /* UserDetailRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02C2C25FE700A00E77353 /* UserDetailRootView.swift */; };
+		32C02C3525FE77AB00E77353 /* UserDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02C3425FE77AB00E77353 /* UserDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +87,14 @@
 		32C02B9425FE2F2A00E77353 /* UsersMasterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterPresenter.swift; sourceTree = "<group>"; };
 		32C02B9925FE35B500E77353 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		32C02B9F25FE366800E77353 /* UserCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellModel.swift; sourceTree = "<group>"; };
+		32C02BF225FE431000E77353 /* DailymotionGithubUsers_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DailymotionGithubUsers_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C02C0E25FE544A00E77353 /* UsersViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewFactory.swift; sourceTree = "<group>"; };
+		32C02C1425FE54C600E77353 /* UsersMasterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterRouter.swift; sourceTree = "<group>"; };
+		32C02C2025FE6F5300E77353 /* UserDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailContract.swift; sourceTree = "<group>"; };
+		32C02C2425FE6FD500E77353 /* UserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
+		32C02C2825FE6FFE00E77353 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		32C02C2C25FE700A00E77353 /* UserDetailRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRootView.swift; sourceTree = "<group>"; };
+		32C02C3425FE77AB00E77353 /* UserDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				323F03B325FBE67700A73D4E /* DailymotionGithubUsers_UI.framework in Frameworks */,
+				32C02BF325FE431000E77353 /* DailymotionGithubUsers_Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				323F03B225FBE67700A73D4E /* DailymotionGithubUsers_UI.framework */,
+				32C02BF225FE431000E77353 /* DailymotionGithubUsers_Core.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				323F041025FBFEA800A73D4E /* AppViewFactory.swift */,
+				32C02C0E25FE544A00E77353 /* UsersViewFactory.swift */,
 			);
 			path = "View Factories";
 			sourceTree = "<group>";
@@ -229,6 +248,7 @@
 				32C02B7025FE259E00E77353 /* UsersMasterContract.swift */,
 				32C02B7425FE261700E77353 /* UsersMasterViewController.swift */,
 				32C02B7825FE271A00E77353 /* UsersMasterRootView.swift */,
+				32C02C1425FE54C600E77353 /* UsersMasterRouter.swift */,
 				32C02B9425FE2F2A00E77353 /* UsersMasterPresenter.swift */,
 			);
 			path = Master;
@@ -237,6 +257,11 @@
 		32C02B6F25FE257900E77353 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				32C02C2025FE6F5300E77353 /* UserDetailContract.swift */,
+				32C02C2425FE6FD500E77353 /* UserDetailPresenter.swift */,
+				32C02C2825FE6FFE00E77353 /* UserDetailViewController.swift */,
+				32C02C2C25FE700A00E77353 /* UserDetailRootView.swift */,
+				32C02C3425FE77AB00E77353 /* UserDetailRouter.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -363,19 +388,26 @@
 				32C02B9A25FE35B500E77353 /* UserTableViewCell.swift in Sources */,
 				323F03DA25FBF58500A73D4E /* Presenter.swift in Sources */,
 				323F03DE25FBF5E600A73D4E /* Routable.swift in Sources */,
+				32C02C3525FE77AB00E77353 /* UserDetailRouter.swift in Sources */,
 				32C02B7525FE261700E77353 /* UsersMasterViewController.swift in Sources */,
 				323F042525FC014300A73D4E /* LaunchPresenter.swift in Sources */,
+				32C02C2D25FE700A00E77353 /* UserDetailRootView.swift in Sources */,
 				32C02B9525FE2F2A00E77353 /* UsersMasterPresenter.swift in Sources */,
 				32C02B7125FE259E00E77353 /* UsersMasterContract.swift in Sources */,
 				323F03E225FBF88700A73D4E /* NextScreen.swift in Sources */,
 				323F03C825FBF49800A73D4E /* ViperModule.swift in Sources */,
+				32C02C2525FE6FD500E77353 /* UserDetailPresenter.swift in Sources */,
 				32C02B6A25FE209F00E77353 /* ViewSpecificController.swift in Sources */,
+				32C02C1525FE54C600E77353 /* UsersMasterRouter.swift in Sources */,
 				32C02B7925FE271A00E77353 /* UsersMasterRootView.swift in Sources */,
+				32C02C2925FE6FFE00E77353 /* UserDetailViewController.swift in Sources */,
 				323F03FE25FBFB4200A73D4E /* ScreenNavigable.swift in Sources */,
 				323F041125FBFEA800A73D4E /* AppViewFactory.swift in Sources */,
 				32C02BA025FE366800E77353 /* UserCellModel.swift in Sources */,
 				323F03E625FBF8B100A73D4E /* ScreenNavigationType.swift in Sources */,
+				32C02C2125FE6F5300E77353 /* UserDetailContract.swift in Sources */,
 				323F041B25FC006700A73D4E /* LaunchContract.swift in Sources */,
+				32C02C0F25FE544A00E77353 /* UsersViewFactory.swift in Sources */,
 				323F03C125FBF41600A73D4E /* AppModules.swift in Sources */,
 				323F03CD25FBF4C900A73D4E /* Viewer.swift in Sources */,
 				323F03BA25FBEA2A00A73D4E /* DailymotionGithubUsers_iOS.swift in Sources */,

@@ -9,11 +9,11 @@ import Foundation
 
 extension URL {
     private func prepareComponents<T: APIRequest>(from request: T) -> URLComponents? {
-        guard var components = URLComponents(url: self, resolvingAgainstBaseURL: true) else {
+        guard let queryItems = URL(string: request.resourceName, relativeTo: self),
+              let components = URLComponents(url: queryItems, resolvingAgainstBaseURL: true) else {
             return nil
         }
-        components.path = "\(self.path)/\(request.resourceName)"
-        
+
         return components
     }
     

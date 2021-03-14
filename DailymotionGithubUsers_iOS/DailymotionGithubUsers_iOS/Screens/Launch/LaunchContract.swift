@@ -17,5 +17,5 @@ protocol LaunchPresentable: Presentable {
 }
 
 protocol LaunchRouterable: Routable {
-    
+    func navigateToUsersMasterScreen()
 }

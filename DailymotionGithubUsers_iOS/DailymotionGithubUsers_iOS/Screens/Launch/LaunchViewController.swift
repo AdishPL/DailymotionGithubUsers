@@ -13,7 +13,12 @@ public final class LaunchViewController: Viewer, ViewSpecificController {
     typealias RootView = LaunchRootView
     
     public override func loadView() {
-        view = RootView()
+        view = LaunchRootView()
+    }
+    
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        presenter.bind()
     }
 }
 

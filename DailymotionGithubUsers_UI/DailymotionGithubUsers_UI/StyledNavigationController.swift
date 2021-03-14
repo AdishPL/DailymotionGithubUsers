@@ -14,7 +14,7 @@ public class StyledNavigationController: UINavigationController {
     }
 
     public func addCloseButton() {
-        viewControllers.first?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "close"),
+        viewControllers.first?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "close", in: DailymotionGithubUsers_UIBundle, compatibleWith: nil),
                                                                                   style: .plain,
                                                                                   target: self,
                                                                                   action: #selector(close))

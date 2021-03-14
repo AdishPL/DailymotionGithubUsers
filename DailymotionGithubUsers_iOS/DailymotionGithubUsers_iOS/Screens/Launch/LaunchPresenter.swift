@@ -12,8 +12,16 @@ final class LaunchPresenter: Presenter, LaunchPresentable {
          router: LaunchRouterable) {
         super.init(view, router)
     }
+    
+    override func bind() {
+        super.bind()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [unowned self] in
+            self.router.navigateToUsersMasterScreen()
+        }
+    }
 }
 
+// swiftlint:disable all
 extension LaunchPresenter {
     var view: LaunchViewable? {
         return _view as? LaunchViewable
@@ -22,3 +30,4 @@ extension LaunchPresenter {
         return _router as! LaunchRouterable
     }
 }
+//swiftlint: enable all

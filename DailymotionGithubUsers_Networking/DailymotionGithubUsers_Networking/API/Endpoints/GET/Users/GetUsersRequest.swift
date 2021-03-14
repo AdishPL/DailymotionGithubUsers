@@ -11,19 +11,22 @@ struct GetUsersRequest: GetRequest {
     typealias Response = UsersResponse
         
     var resourceName: String {
+        let usersResource = "users?page=\(page)&"
+        
         guard let fields = fields else {
-            return "/users"
+            return usersResource
         }
         
-        return "/users?fields="
-            + fields.map { $0.rawValue }
-            .joined(separator: ",")
+        return usersResource + "fields=" + fields.map { $0.rawValue }.joined(separator: ",")
     }
     
     private let fields: [GetUsersRequest.Fields]?
+    private let page: Int
     
-    init(fields: [GetUsersRequest.Fields]? = nil) {
+    init(fields: [GetUsersRequest.Fields]? = nil,
+         page: Int = 1) {
         self.fields = fields
+        self.page = page
     }
 }
 
