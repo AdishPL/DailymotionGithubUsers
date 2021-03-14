@@ -33,6 +33,8 @@
 		32C02B7525FE261700E77353 /* UsersMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B7425FE261700E77353 /* UsersMasterViewController.swift */; };
 		32C02B7925FE271A00E77353 /* UsersMasterRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B7825FE271A00E77353 /* UsersMasterRootView.swift */; };
 		32C02B9525FE2F2A00E77353 /* UsersMasterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B9425FE2F2A00E77353 /* UsersMasterPresenter.swift */; };
+		32C02B9A25FE35B500E77353 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B9925FE35B500E77353 /* UserTableViewCell.swift */; };
+		32C02BA025FE366800E77353 /* UserCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B9F25FE366800E77353 /* UserCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		32C02B7425FE261700E77353 /* UsersMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterViewController.swift; sourceTree = "<group>"; };
 		32C02B7825FE271A00E77353 /* UsersMasterRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterRootView.swift; sourceTree = "<group>"; };
 		32C02B9425FE2F2A00E77353 /* UsersMasterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterPresenter.swift; sourceTree = "<group>"; };
+		32C02B9925FE35B500E77353 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		32C02B9F25FE366800E77353 /* UserCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +225,7 @@
 		32C02B6E25FE257300E77353 /* Master */ = {
 			isa = PBXGroup;
 			children = (
+				32C02B9825FE334600E77353 /* Cells */,
 				32C02B7025FE259E00E77353 /* UsersMasterContract.swift */,
 				32C02B7425FE261700E77353 /* UsersMasterViewController.swift */,
 				32C02B7825FE271A00E77353 /* UsersMasterRootView.swift */,
@@ -234,6 +239,15 @@
 			children = (
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		32C02B9825FE334600E77353 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				32C02B9925FE35B500E77353 /* UserTableViewCell.swift */,
+				32C02B9F25FE366800E77353 /* UserCellModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				323F03EA25FBF8D500A73D4E /* ViewPresentation.swift in Sources */,
+				32C02B9A25FE35B500E77353 /* UserTableViewCell.swift in Sources */,
 				323F03DA25FBF58500A73D4E /* Presenter.swift in Sources */,
 				323F03DE25FBF5E600A73D4E /* Routable.swift in Sources */,
 				32C02B7525FE261700E77353 /* UsersMasterViewController.swift in Sources */,
@@ -358,6 +373,7 @@
 				32C02B7925FE271A00E77353 /* UsersMasterRootView.swift in Sources */,
 				323F03FE25FBFB4200A73D4E /* ScreenNavigable.swift in Sources */,
 				323F041125FBFEA800A73D4E /* AppViewFactory.swift in Sources */,
+				32C02BA025FE366800E77353 /* UserCellModel.swift in Sources */,
 				323F03E625FBF8B100A73D4E /* ScreenNavigationType.swift in Sources */,
 				323F041B25FC006700A73D4E /* LaunchContract.swift in Sources */,
 				323F03C125FBF41600A73D4E /* AppModules.swift in Sources */,
