@@ -15,7 +15,7 @@ struct ScreenNavigator {
     private let window: () -> UIWindow?
 
     init(window: (() -> UIWindow?)? = nil) {
-        self.window = window ?? { (UIApplication.shared.delegate?.window)! }
+        self.window = window ?? { (UIApplication.shared.delegate?.window ?? nil) }
     }
 }
 

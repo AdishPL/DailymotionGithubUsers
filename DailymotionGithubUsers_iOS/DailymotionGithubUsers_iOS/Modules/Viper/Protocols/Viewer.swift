@@ -30,7 +30,6 @@ open class Viewer: UIViewController, Viewable {
 
     override open func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = AppDesign.current.appBackgroundColor
         addSubviews()
         makeConstraints()
 

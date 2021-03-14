@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 import DailymotionGithubUsers_UI
 
-public class LaunchViewController: Viewer {
+public final class LaunchViewController: Viewer, ViewSpecificController {
+    typealias RootView = LaunchRootView
+    
     public override func loadView() {
         view = RootView()
     }
@@ -22,27 +24,3 @@ extension LaunchViewController {
 }
 
 extension LaunchViewController: LaunchViewable {}
-
-class RootView: NiblessView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        setupLayout()
-    }
-    
-    private func setupLayout() {
-        backgroundColor = .red
-        
-        let label = UILabel()
-        label.text = "DERP"
-    
-        addSubview(label)
-        
-        label.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            label.centerYAnchor.constraint(equalTo: centerYAnchor),
-            label.centerXAnchor.constraint(equalTo: centerXAnchor)
-        ])
-    }
-}

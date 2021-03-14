@@ -27,6 +27,12 @@
 		323F041B25FC006700A73D4E /* LaunchContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F041A25FC006700A73D4E /* LaunchContract.swift */; };
 		323F042125FC00FF00A73D4E /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F042025FC00FF00A73D4E /* LaunchRouter.swift */; };
 		323F042525FC014300A73D4E /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F042425FC014300A73D4E /* LaunchPresenter.swift */; };
+		32C02B6425FE1FFC00E77353 /* LaunchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B6325FE1FFC00E77353 /* LaunchRootView.swift */; };
+		32C02B6A25FE209F00E77353 /* ViewSpecificController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B6925FE209F00E77353 /* ViewSpecificController.swift */; };
+		32C02B7125FE259E00E77353 /* UsersMasterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B7025FE259E00E77353 /* UsersMasterContract.swift */; };
+		32C02B7525FE261700E77353 /* UsersMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B7425FE261700E77353 /* UsersMasterViewController.swift */; };
+		32C02B7925FE271A00E77353 /* UsersMasterRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B7825FE271A00E77353 /* UsersMasterRootView.swift */; };
+		32C02B9525FE2F2A00E77353 /* UsersMasterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B9425FE2F2A00E77353 /* UsersMasterPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,12 @@
 		323F041A25FC006700A73D4E /* LaunchContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchContract.swift; sourceTree = "<group>"; };
 		323F042025FC00FF00A73D4E /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
 		323F042425FC014300A73D4E /* LaunchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
+		32C02B6325FE1FFC00E77353 /* LaunchRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRootView.swift; sourceTree = "<group>"; };
+		32C02B6925FE209F00E77353 /* ViewSpecificController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSpecificController.swift; sourceTree = "<group>"; };
+		32C02B7025FE259E00E77353 /* UsersMasterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterContract.swift; sourceTree = "<group>"; };
+		32C02B7425FE261700E77353 /* UsersMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterViewController.swift; sourceTree = "<group>"; };
+		32C02B7825FE271A00E77353 /* UsersMasterRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterRootView.swift; sourceTree = "<group>"; };
+		32C02B9425FE2F2A00E77353 /* UsersMasterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +154,7 @@
 				323F03E525FBF8B100A73D4E /* ScreenNavigationType.swift */,
 				323F03E925FBF8D500A73D4E /* ViewPresentation.swift */,
 				323F03E125FBF88700A73D4E /* NextScreen.swift */,
+				32C02B6925FE209F00E77353 /* ViewSpecificController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -178,6 +191,7 @@
 		323F041425FBFF4800A73D4E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				32C02B6D25FE253900E77353 /* Users */,
 				323F041525FBFF4F00A73D4E /* Launch */,
 			);
 			path = Screens;
@@ -187,11 +201,39 @@
 			isa = PBXGroup;
 			children = (
 				323F03AB25FBE63E00A73D4E /* LaunchViewController.swift */,
+				32C02B6325FE1FFC00E77353 /* LaunchRootView.swift */,
 				323F041A25FC006700A73D4E /* LaunchContract.swift */,
 				323F042025FC00FF00A73D4E /* LaunchRouter.swift */,
 				323F042425FC014300A73D4E /* LaunchPresenter.swift */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		32C02B6D25FE253900E77353 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				32C02B6F25FE257900E77353 /* Detail */,
+				32C02B6E25FE257300E77353 /* Master */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		32C02B6E25FE257300E77353 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				32C02B7025FE259E00E77353 /* UsersMasterContract.swift */,
+				32C02B7425FE261700E77353 /* UsersMasterViewController.swift */,
+				32C02B7825FE271A00E77353 /* UsersMasterRootView.swift */,
+				32C02B9425FE2F2A00E77353 /* UsersMasterPresenter.swift */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		32C02B6F25FE257900E77353 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,9 +348,14 @@
 				323F03EA25FBF8D500A73D4E /* ViewPresentation.swift in Sources */,
 				323F03DA25FBF58500A73D4E /* Presenter.swift in Sources */,
 				323F03DE25FBF5E600A73D4E /* Routable.swift in Sources */,
+				32C02B7525FE261700E77353 /* UsersMasterViewController.swift in Sources */,
 				323F042525FC014300A73D4E /* LaunchPresenter.swift in Sources */,
+				32C02B9525FE2F2A00E77353 /* UsersMasterPresenter.swift in Sources */,
+				32C02B7125FE259E00E77353 /* UsersMasterContract.swift in Sources */,
 				323F03E225FBF88700A73D4E /* NextScreen.swift in Sources */,
 				323F03C825FBF49800A73D4E /* ViperModule.swift in Sources */,
+				32C02B6A25FE209F00E77353 /* ViewSpecificController.swift in Sources */,
+				32C02B7925FE271A00E77353 /* UsersMasterRootView.swift in Sources */,
 				323F03FE25FBFB4200A73D4E /* ScreenNavigable.swift in Sources */,
 				323F041125FBFEA800A73D4E /* AppViewFactory.swift in Sources */,
 				323F03E625FBF8B100A73D4E /* ScreenNavigationType.swift in Sources */,
@@ -319,6 +366,7 @@
 				323F042125FC00FF00A73D4E /* LaunchRouter.swift in Sources */,
 				323F03EE25FBF9C200A73D4E /* Module.swift in Sources */,
 				323F03AC25FBE63E00A73D4E /* LaunchViewController.swift in Sources */,
+				32C02B6425FE1FFC00E77353 /* LaunchRootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ protocol ViewFactory {}
 
 struct AppViewFactory: ViewFactory {
     static func buildLaunchView() -> Module {
-        let view: LaunchViewController = AppModules.launch.loadView()
+        let view: LaunchViewController = AppModules.launch.loadView(bundle: DailymotionGithubUsers_iOSBundle)
         let router = LaunchRouter(screenNavigator: ScreenNavigator())
         let presenter = LaunchPresenter(
             view: view,

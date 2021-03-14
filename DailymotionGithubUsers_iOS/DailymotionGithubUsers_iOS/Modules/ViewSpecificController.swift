@@ -1,8 +1,8 @@
 //
 //  ViewSpecificController.swift
-//  DailymotionGithubUsers_UI
+//  DailymotionGithubUsers_iOS
 //
-//  Created by Adrian Kaczmarek on 12/03/2021.
+//  Created by Adrian Kaczmarek on 14/03/2021.
 //
 
 import UIKit
