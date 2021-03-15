@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		323F039025FBE35200A73D4E /* DailymotionGithubUsers_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323F038625FBE35200A73D4E /* DailymotionGithubUsers_iOS.framework */; };
-		323F039525FBE35200A73D4E /* DailymotionGithubUsers_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F039425FBE35200A73D4E /* DailymotionGithubUsers_iOSTests.swift */; };
 		323F039725FBE35200A73D4E /* DailymotionGithubUsers_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 323F038925FBE35200A73D4E /* DailymotionGithubUsers_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		323F03AC25FBE63E00A73D4E /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03AB25FBE63E00A73D4E /* LaunchViewController.swift */; };
 		323F03B325FBE67700A73D4E /* DailymotionGithubUsers_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323F03B225FBE67700A73D4E /* DailymotionGithubUsers_UI.framework */; };
@@ -18,6 +17,10 @@
 		323F041B25FC006700A73D4E /* LaunchContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F041A25FC006700A73D4E /* LaunchContract.swift */; };
 		323F042125FC00FF00A73D4E /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F042025FC00FF00A73D4E /* LaunchRouter.swift */; };
 		323F042525FC014300A73D4E /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F042425FC014300A73D4E /* LaunchPresenter.swift */; };
+		32471A2725FF5DB50009C81C /* UsersMasterPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32471A2625FF5DB50009C81C /* UsersMasterPresenterTests.swift */; };
+		32471A3B25FF791E0009C81C /* FakeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32471A3A25FF791E0009C81C /* FakeAPIClient.swift */; };
+		32471A4225FF7A190009C81C /* UsersMasterDummyViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32471A4125FF7A190009C81C /* UsersMasterDummyViewable.swift */; };
+		32471A4825FF7A510009C81C /* UsersMasterDummyRouterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32471A4725FF7A510009C81C /* UsersMasterDummyRouterable.swift */; };
 		32C02B6425FE1FFC00E77353 /* LaunchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B6325FE1FFC00E77353 /* LaunchRootView.swift */; };
 		32C02B6A25FE209F00E77353 /* ViewSpecificController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B6925FE209F00E77353 /* ViewSpecificController.swift */; };
 		32C02B7125FE259E00E77353 /* UsersMasterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02B7025FE259E00E77353 /* UsersMasterContract.swift */; };
@@ -51,7 +54,6 @@
 		323F038925FBE35200A73D4E /* DailymotionGithubUsers_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailymotionGithubUsers_iOS.h; sourceTree = "<group>"; };
 		323F038A25FBE35200A73D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		323F038F25FBE35200A73D4E /* DailymotionGithubUsers_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailymotionGithubUsers_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		323F039425FBE35200A73D4E /* DailymotionGithubUsers_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionGithubUsers_iOSTests.swift; sourceTree = "<group>"; };
 		323F039625FBE35200A73D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		323F03AB25FBE63E00A73D4E /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		323F03B225FBE67700A73D4E /* DailymotionGithubUsers_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DailymotionGithubUsers_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,10 @@
 		323F041A25FC006700A73D4E /* LaunchContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchContract.swift; sourceTree = "<group>"; };
 		323F042025FC00FF00A73D4E /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
 		323F042425FC014300A73D4E /* LaunchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
+		32471A2625FF5DB50009C81C /* UsersMasterPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterPresenterTests.swift; sourceTree = "<group>"; };
+		32471A3A25FF791E0009C81C /* FakeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAPIClient.swift; sourceTree = "<group>"; };
+		32471A4125FF7A190009C81C /* UsersMasterDummyViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterDummyViewable.swift; sourceTree = "<group>"; };
+		32471A4725FF7A510009C81C /* UsersMasterDummyRouterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterDummyRouterable.swift; sourceTree = "<group>"; };
 		32C02B6325FE1FFC00E77353 /* LaunchRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRootView.swift; sourceTree = "<group>"; };
 		32C02B6925FE209F00E77353 /* ViewSpecificController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSpecificController.swift; sourceTree = "<group>"; };
 		32C02B7025FE259E00E77353 /* UsersMasterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersMasterContract.swift; sourceTree = "<group>"; };
@@ -134,7 +140,8 @@
 		323F039325FBE35200A73D4E /* DailymotionGithubUsers_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				323F039425FBE35200A73D4E /* DailymotionGithubUsers_iOSTests.swift */,
+				32471A3925FF79110009C81C /* Mocks */,
+				32471A2525FF5D9E0009C81C /* Presenters */,
 				323F039625FBE35200A73D4E /* Info.plist */,
 			);
 			path = DailymotionGithubUsers_iOSTests;
@@ -153,18 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				323F040F25FBFE9B00A73D4E /* View Factories */,
-				323F03C625FBF47800A73D4E /* Viper */,
 				323F03C025FBF41600A73D4E /* AppModules.swift */,
 				32C02B6925FE209F00E77353 /* ViewSpecificController.swift */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		323F03C625FBF47800A73D4E /* Viper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Viper;
 			sourceTree = "<group>";
 		};
 		323F040F25FBFE9B00A73D4E /* View Factories */ = {
@@ -195,6 +194,40 @@
 				323F042425FC014300A73D4E /* LaunchPresenter.swift */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		32471A2525FF5D9E0009C81C /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				32471A2C25FF6C6A0009C81C /* Users Master */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		32471A2C25FF6C6A0009C81C /* Users Master */ = {
+			isa = PBXGroup;
+			children = (
+				32471A4025FF7A0A0009C81C /* Dummies */,
+				32471A2625FF5DB50009C81C /* UsersMasterPresenterTests.swift */,
+			);
+			path = "Users Master";
+			sourceTree = "<group>";
+		};
+		32471A3925FF79110009C81C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				32471A3A25FF791E0009C81C /* FakeAPIClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		32471A4025FF7A0A0009C81C /* Dummies */ = {
+			isa = PBXGroup;
+			children = (
+				32471A4125FF7A190009C81C /* UsersMasterDummyViewable.swift */,
+				32471A4725FF7A510009C81C /* UsersMasterDummyRouterable.swift */,
+			);
+			path = Dummies;
 			sourceTree = "<group>";
 		};
 		32C02B6D25FE253900E77353 /* Users */ = {
@@ -378,7 +411,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323F039525FBE35200A73D4E /* DailymotionGithubUsers_iOSTests.swift in Sources */,
+				32471A4825FF7A510009C81C /* UsersMasterDummyRouterable.swift in Sources */,
+				32471A3B25FF791E0009C81C /* FakeAPIClient.swift in Sources */,
+				32471A2725FF5DB50009C81C /* UsersMasterPresenterTests.swift in Sources */,
+				32471A4225FF7A190009C81C /* UsersMasterDummyViewable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

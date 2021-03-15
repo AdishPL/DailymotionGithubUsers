@@ -8,11 +8,11 @@
 import DailymotionGithubUsers_UI
 import UIKit
 
-public final class UsersMasterViewController: Viewer, ViewSpecificController {
+final class UsersMasterViewController: Viewer, ViewSpecificController {
     typealias RootView = UsersMasterRootView
-        
+    
     // MARK: - Managing the View
-
+    
     public override func loadView() {
         view = UsersMasterRootView()
     }

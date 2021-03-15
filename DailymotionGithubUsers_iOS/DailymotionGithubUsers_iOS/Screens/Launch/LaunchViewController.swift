@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import DailymotionGithubUsers_UI
 
-public final class LaunchViewController: Viewer, ViewSpecificController {
+final class LaunchViewController: Viewer, ViewSpecificController {
     typealias RootView = LaunchRootView
     
     public override func loadView() {

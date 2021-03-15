@@ -46,7 +46,7 @@ final class UserTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Functions
+    // MARK: - Setup
 
     private func setupView() {
         selectionStyle = .none
@@ -91,8 +91,8 @@ final class UserTableViewCell: UITableViewCell {
     // MARK: - Reuse
     
     override func prepareForReuse() {
-        imageView?.image = nil
         super.prepareForReuse()
+        photoImageView.image = nil
     }
 }
 

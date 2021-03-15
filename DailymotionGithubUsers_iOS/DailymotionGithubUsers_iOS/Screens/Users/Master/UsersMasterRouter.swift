@@ -9,7 +9,7 @@ import Foundation
 import DailymotionGithubUsers_Core
 import DailymotionGithubUsers_UI
 
-class UsersMasterRouter: Router, UsersMasterRouterable {
+final class UsersMasterRouter: Router, UsersMasterRouterable {
     func navigateToUserDetail(_ user: User) {
         let presentation = ViewPresentation(
             from: viewController,
@@ -18,7 +18,7 @@ class UsersMasterRouter: Router, UsersMasterRouterable {
             closeButton: true)
         
         let userDetailScreen = NextScreen(AppModules.Users.userDetail, data: user, navigationType: .present(presentation))
-
+        
         navigate(to: userDetailScreen)
     }
 }

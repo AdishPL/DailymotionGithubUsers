@@ -8,24 +8,23 @@
 import UIKit
 
 public extension UIImageView {
-    func setImageFrom(url: URL, completion: (() -> Void)? = nil) {
+    func setImageFrom(url: URL, completion: (() -> Void)? = nil) {        
         let progressHud = UIActivityIndicatorView(style: .white)
         progressHud.color = AppDesign.current.activityIndicatorColor
-        progressHud.center = center
         progressHud.startAnimating()
+        
         addSubview(progressHud)
+        progressHud.center = center
         
         DispatchQueue.global().async {
             let imageData = try? Data(contentsOf: url)
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
                 progressHud.removeFromSuperview()
                 if let data = imageData, let image = UIImage(data: data) {
-                    self.image = image
-                    self.layoutIfNeeded()
+                    self?.image = image
                 }
                 completion?()
             }
         }
     }
 }
-

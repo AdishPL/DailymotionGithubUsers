@@ -13,11 +13,11 @@ final class UsersMasterPresenter: Presenter, UsersMasterPresentable {
     // MARK: - Private Properties
     
     private let usersRepository: UsersRepositoryProtocol
-
-    private var cells: [CellViewModel] = []
-
+    
+    private(set) var cells: [CellViewModel] = []
+    
     // MARK: - Initialization
-
+    
     init(view: UsersMasterViewable,
          router: UsersMasterRouterable,
          usersRepository: UsersRepositoryProtocol) {
@@ -26,7 +26,7 @@ final class UsersMasterPresenter: Presenter, UsersMasterPresentable {
     }
     
     // MARK: - Binding
-
+    
     override func bind() {
         super.bind()
         retrieveUsers()
@@ -53,10 +53,9 @@ final class UsersMasterPresenter: Presenter, UsersMasterPresentable {
     
     private func loadCells(with users: [User]) {
         let cells: [CellViewModel] = users.map { user in
-            let cell = UserCellModel(user: user) { [unowned self] in
+            return UserCellModel(user: user) { [unowned self] in
                 self.didSelect(user)
             }
-            return cell
         }
         
         self.cells = cells

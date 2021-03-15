@@ -8,7 +8,7 @@
 import UIKit
 import DailymotionGithubUsers_UI
 
-class UsersMasterRootView: NiblessView {
+final class UsersMasterRootView: NiblessView {
     // MARK: - Private Properties
 
     private weak var activityIndicator: UIActivityIndicatorView?

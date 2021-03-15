@@ -8,7 +8,7 @@
 import UIKit
 import DailymotionGithubUsers_UI
 
-class UserDetailRootView: NiblessView {
+final class UserDetailRootView: NiblessView {
     // MARK: - Properties
 
     private weak var scrollView: UIScrollView?
@@ -19,7 +19,7 @@ class UserDetailRootView: NiblessView {
     private weak var titleLabel: UILabel?
     private weak var subtitleLabel: UILabel?
     
-    // MARK: - Adding the Subviews
+    // MARK: - Setup layout
 
     override func constructHierarchy() {
         addStackView()
@@ -31,6 +31,45 @@ class UserDetailRootView: NiblessView {
         addSubtitleLabel()
     }
     
+    // MARK: - Making Constraints
+    
+    override func activateConstraints() {
+        guard
+            let `stackView` = stackView,
+            let `photoImageView` = photoImageView,
+            let `contentView` = contentView
+        else {
+            return
+        }
+        
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            stackView.topAnchor.constraint(equalTo: topAnchor),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            photoImageView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height * 0.2),
+            photoImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor)
+        ])
+    }
+    
+    // MARK: - Assign model
+    
+    func assign(username: String,
+                userDestination: String?,
+                userPhotoUrl: URL) {
+        photoImageView?.setImageFrom(url: userPhotoUrl)
+        titleLabel?.text = username
+        subtitleLabel?.text = userDestination
+    }
+}
+
+// MARK: - Adding the Subviews
+
+private extension UserDetailRootView {
     func addStackView() {
         let stackView = UIStackView.buildStackView(.vertical, alignment: .fill)
         addSubview(stackView)
@@ -71,40 +110,5 @@ class UserDetailRootView: NiblessView {
         label.numberOfLines = 0
         contentView?.addArrangedSubview(label)
         subtitleLabel = label
-    }
-    
-    // MARK: - Making Constraints
-    
-    override func activateConstraints() {
-        guard
-            let `stackView` = stackView,
-            let `photoImageView` = photoImageView,
-            let `contentView` = contentView
-        else {
-            return
-        }
-        
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
-            photoImageView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height * 0.2),
-            photoImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor)
-        ])
-    }
-    
-    // MARK: - Assign model
-    
-    func assign(username: String,
-                userDestination: String?,
-                userPhotoUrl: URL) {
-        photoImageView?.setImageFrom(url: userPhotoUrl)
-        titleLabel?.text = username
-        subtitleLabel?.text = userDestination
     }
 }
