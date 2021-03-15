@@ -24,8 +24,8 @@ class APIClient: APIClientProtocol {
         self.requestBuilder = requestBuilder
         self.dataTaskCreator = dataTaskCreator
     }
-    
-    func makeRequest<T>(_ request: T, completion: @escaping ResultCallback<T.Response>) where T : APIRequest {
+   
+    func makeRequest<T: APIRequest>(_ request: T, completion: @escaping ResultCallback<T.Response>){
         var endpointRequest: URLRequest
         do { endpointRequest = try requestBuilder.endpointRequest(from: request) }
         catch { completion(.failure(error)); return }

@@ -18,11 +18,18 @@ protocol APIRequest: Encodable {
 
     /// HTTP Method used for request
     var httpMethod: HTTPMethod { get }
+    
+    /// Additional query parameters for request
+    var queryParams: [String : [String]]? { get }
 }
 
 extension APIRequest {
     var isAuthenticated: Bool {
         return false
+    }
+    
+    var queryParams: [String : [String]]? {
+        return nil
     }
 }
 

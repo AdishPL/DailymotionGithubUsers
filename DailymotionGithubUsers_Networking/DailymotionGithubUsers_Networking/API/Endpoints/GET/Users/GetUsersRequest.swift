@@ -8,25 +8,31 @@
 import Foundation
 
 struct GetUsersRequest: GetRequest {
+    var queryParams: [String : [String]]?
+    
     typealias Response = UsersResponse
         
     var resourceName: String {
-        let usersResource = "users?page=\(page)&"
-        
-        guard let fields = fields else {
-            return usersResource
-        }
-        
-        return usersResource + "fields=" + fields.map { $0.rawValue }.joined(separator: ",")
+        return "users"
     }
-    
-    private let fields: [GetUsersRequest.Fields]?
-    private let page: Int
     
     init(fields: [GetUsersRequest.Fields]? = nil,
          page: Int = 1) {
-        self.fields = fields
-        self.page = page
+        let additionalQueryParams: ([String : [String]]?) -> [String : [String]] = { dictionaryFields in
+            let pageQueryParams = ["page" : ["\(page)"]]
+            
+            if let additionalQueryParams = dictionaryFields {
+                return additionalQueryParams.merging(pageQueryParams) { (_, new) in new }
+            } else {
+                return pageQueryParams
+            }
+        }
+        
+        if let fields = fields {
+            queryParams = additionalQueryParams(["fields": fields.map { $0.rawValue }])
+        } else {
+            queryParams = additionalQueryParams(nil)
+        }
     }
 }
 

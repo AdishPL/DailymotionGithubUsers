@@ -29,7 +29,9 @@ class RequestBuilderTests: XCTestCase {
         let request = try! sut.endpointRequest(from: getUsersRequest)
         
         /// Then
-        XCTAssertEqual(request.url!.query, "page=1fields=avatar_360_url,username")
+        XCTAssertEqual(request.url!.lastPathComponent, "users")
+        
+        XCTAssertEqual(request.url!.query, "page=1&fields=avatar_360_url,username")
     }
     
     func testEndpointRequestCorrectlyBuildsGetUsersRequestWithoutFields() {
