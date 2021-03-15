@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DailymotionGithubUsers_UI
 
 class UserDetailRouter: Router, UserDetailRouterable {
 }

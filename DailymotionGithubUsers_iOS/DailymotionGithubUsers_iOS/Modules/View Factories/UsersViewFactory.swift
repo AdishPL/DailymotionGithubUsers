@@ -7,6 +7,7 @@
 
 import Foundation
 import DailymotionGithubUsers_Core
+import DailymotionGithubUsers_UI
 
 struct UsersViewFactory: ViewFactory {
     static func buildUsersMasterView() -> Module {

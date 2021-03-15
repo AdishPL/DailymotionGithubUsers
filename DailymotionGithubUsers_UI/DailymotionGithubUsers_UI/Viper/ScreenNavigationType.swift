@@ -1,13 +1,13 @@
 //
 //  ScreenNavigationType.swift
-//  DailymotionGithubUsers_iOS
+//  DailymotionGithubUsers_UI
 //
-//  Created by Adrian Kaczmarek on 12/03/2021.
+//  Created by Adrian Kaczmarek on 15/03/2021.
 //
 
 import UIKit
 
-enum ScreenNavigationType {
+public enum ScreenNavigationType {
     case switchRoot(embedInNavigationController: Bool = false)
     case show(from: UIViewController? = nil, embedInNavigationController: Bool = false)
     case present(_ presentation: ViewPresentation)

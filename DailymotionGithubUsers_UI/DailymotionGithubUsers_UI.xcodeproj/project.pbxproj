@@ -13,6 +13,15 @@
 		323F040425FBFC8B00A73D4E /* UINavigationController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F040325FBFC8B00A73D4E /* UINavigationController+Helpers.swift */; };
 		323F040825FBFCFA00A73D4E /* StyledNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F040725FBFCFA00A73D4E /* StyledNavigationController.swift */; };
 		323F040C25FBFD2600A73D4E /* UINavigationBar+Stylization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F040B25FBFD2600A73D4E /* UINavigationBar+Stylization.swift */; };
+		324719DD25FF4D630009C81C /* Viewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324719DC25FF4D630009C81C /* Viewer.swift */; };
+		324719E125FF4D860009C81C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324719E025FF4D860009C81C /* Router.swift */; };
+		324719E725FF4DAB0009C81C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324719E625FF4DAB0009C81C /* Presenter.swift */; };
+		324719EB25FF4DD30009C81C /* ViperModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324719EA25FF4DD30009C81C /* ViperModule.swift */; };
+		324719EF25FF4DEA0009C81C /* ScreenNavigationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324719EE25FF4DEA0009C81C /* ScreenNavigationType.swift */; };
+		324719F325FF4DFD0009C81C /* ViewPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324719F225FF4DFD0009C81C /* ViewPresentation.swift */; };
+		324719F725FF4E0F0009C81C /* NextScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324719F625FF4E0F0009C81C /* NextScreen.swift */; };
+		324719FB25FF4E660009C81C /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324719FA25FF4E660009C81C /* Module.swift */; };
+		324719FF25FF4E950009C81C /* ScreenNavigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324719FE25FF4E950009C81C /* ScreenNavigable.swift */; };
 		329DC4F725FBD09C006658E5 /* DailymotionGithubUsers_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329DC4ED25FBD09C006658E5 /* DailymotionGithubUsers_UI.framework */; };
 		329DC4FC25FBD09C006658E5 /* DailymotionGithubUsers_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DC4FB25FBD09C006658E5 /* DailymotionGithubUsers_UITests.swift */; };
 		329DC4FE25FBD09C006658E5 /* DailymotionGithubUsers_UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 329DC4F025FBD09C006658E5 /* DailymotionGithubUsers_UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -55,6 +64,15 @@
 		323F040325FBFC8B00A73D4E /* UINavigationController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Helpers.swift"; sourceTree = "<group>"; };
 		323F040725FBFCFA00A73D4E /* StyledNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledNavigationController.swift; sourceTree = "<group>"; };
 		323F040B25FBFD2600A73D4E /* UINavigationBar+Stylization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Stylization.swift"; sourceTree = "<group>"; };
+		324719DC25FF4D630009C81C /* Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewer.swift; sourceTree = "<group>"; };
+		324719E025FF4D860009C81C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		324719E625FF4DAB0009C81C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		324719EA25FF4DD30009C81C /* ViperModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperModule.swift; sourceTree = "<group>"; };
+		324719EE25FF4DEA0009C81C /* ScreenNavigationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenNavigationType.swift; sourceTree = "<group>"; };
+		324719F225FF4DFD0009C81C /* ViewPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentation.swift; sourceTree = "<group>"; };
+		324719F625FF4E0F0009C81C /* NextScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextScreen.swift; sourceTree = "<group>"; };
+		324719FA25FF4E660009C81C /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		324719FE25FF4E950009C81C /* ScreenNavigable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenNavigable.swift; sourceTree = "<group>"; };
 		329DC4ED25FBD09C006658E5 /* DailymotionGithubUsers_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DailymotionGithubUsers_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329DC4F025FBD09C006658E5 /* DailymotionGithubUsers_UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailymotionGithubUsers_UI.h; sourceTree = "<group>"; };
 		329DC4F125FBD09C006658E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +137,30 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		324719DA25FF4D300009C81C /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				324719DB25FF4D540009C81C /* Protocols */,
+				324719EA25FF4DD30009C81C /* ViperModule.swift */,
+				324719FE25FF4E950009C81C /* ScreenNavigable.swift */,
+				324719EE25FF4DEA0009C81C /* ScreenNavigationType.swift */,
+				324719F225FF4DFD0009C81C /* ViewPresentation.swift */,
+				324719F625FF4E0F0009C81C /* NextScreen.swift */,
+				324719FA25FF4E660009C81C /* Module.swift */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		324719DB25FF4D540009C81C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				324719DC25FF4D630009C81C /* Viewer.swift */,
+				324719E025FF4D860009C81C /* Router.swift */,
+				324719E625FF4DAB0009C81C /* Presenter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		329DC4E325FBD09B006658E5 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +182,7 @@
 		329DC4EF25FBD09C006658E5 /* DailymotionGithubUsers_UI */ = {
 			isa = PBXGroup;
 			children = (
+				324719DA25FF4D300009C81C /* Viper */,
 				32C02C3C25FE925300E77353 /* Assets */,
 				32C02C0625FE524800E77353 /* Extensions */,
 				32C02B7C25FE2BF700E77353 /* Table View Adaptation */,
@@ -341,27 +384,36 @@
 				32C02C1D25FE6AC400E77353 /* UITableView+BuildTableView.swift in Sources */,
 				323F040825FBFCFA00A73D4E /* StyledNavigationController.swift in Sources */,
 				329DC52B25FBD7C8006658E5 /* LightAppPalette.swift in Sources */,
+				324719DD25FF4D630009C81C /* Viewer.swift in Sources */,
 				32C02B8225FE2CAB00E77353 /* ConfigurableCell.swift in Sources */,
 				32C02B8D25FE2D4500E77353 /* TableViewSection.swift in Sources */,
 				323F03D425FBF54500A73D4E /* ViewShowable.swift in Sources */,
+				324719FF25FF4E950009C81C /* ScreenNavigable.swift in Sources */,
+				324719EF25FF4DEA0009C81C /* ScreenNavigationType.swift in Sources */,
 				32C02C3925FE80A300E77353 /* UIView+Extensions.swift in Sources */,
 				323F040C25FBFD2600A73D4E /* UINavigationBar+Stylization.swift in Sources */,
+				324719F725FF4E0F0009C81C /* NextScreen.swift in Sources */,
 				32C02C4225FE92F700E77353 /* DailymotionGithubUsers_UI.swift in Sources */,
 				323F036025FBE22400A73D4E /* NiblessViewController.swift in Sources */,
+				324719F325FF4DFD0009C81C /* ViewPresentation.swift in Sources */,
+				324719EB25FF4DD30009C81C /* ViperModule.swift in Sources */,
 				329DC52525FBD6D6006658E5 /* AppFontSize.swift in Sources */,
 				329DC52125FBD5FB006658E5 /* AppTextStyle.swift in Sources */,
 				329DC52F25FBD892006658E5 /* Colors.swift in Sources */,
 				32C02B8725FE2D1000E77353 /* TableViewAdapter.swift in Sources */,
 				32C02C3125FE739200E77353 /* UIScrollView+BuildScrollView.swift in Sources */,
+				324719FB25FF4E660009C81C /* Module.swift in Sources */,
 				32C02C1925FE636000E77353 /* UIStackView+BuildStackView.swift in Sources */,
 				32C02C0825FE527300E77353 /* UIImageView+SetImageFromUrl.swift in Sources */,
 				329DC51225FBD36C006658E5 /* AppLayoutMargin.swift in Sources */,
 				329DC51D25FBD4CC006658E5 /* DesignPaletteProtocol.swift in Sources */,
 				32C02B7E25FE2C0800E77353 /* CellViewModel.swift in Sources */,
 				323F040425FBFC8B00A73D4E /* UINavigationController+Helpers.swift in Sources */,
+				324719E725FF4DAB0009C81C /* Presenter.swift in Sources */,
 				32C02B9125FE2D7800E77353 /* UITableView+Extensions.swift in Sources */,
 				323F036625FBE23A00A73D4E /* NiblessView.swift in Sources */,
 				329DC51725FBD47A006658E5 /* AppDesign.swift in Sources */,
+				324719E125FF4D860009C81C /* Router.swift in Sources */,
 				329DC53625FBD8EC006658E5 /* UIFont+Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

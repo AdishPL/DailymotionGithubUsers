@@ -1,13 +1,13 @@
 //
 //  Presenter.swift
-//  DailymotionGithubUsers_iOS
+//  DailymotionGithubUsers_UI
 //
-//  Created by Adrian Kaczmarek on 12/03/2021.
+//  Created by Adrian Kaczmarek on 15/03/2021.
 //
 
-import UIKit
+import Foundation
 
-protocol Presentable: AnyObject {
+public protocol Presentable: AnyObject {
     var _view: Viewable! { get set }
     var _router: Routable! { get set }
 
@@ -23,10 +23,10 @@ protocol Presentable: AnyObject {
 }
 
 open class Presenter: Presentable {
-    weak var _view: Viewable!
-    var _router: Routable!
+    public weak var _view: Viewable!
+    public var _router: Routable!
 
-    init(_ view: Viewable, _ router: Routable) {
+    public init(_ view: Viewable, _ router: Routable) {
         _view = view
         _view._presenter = self
         _router = router

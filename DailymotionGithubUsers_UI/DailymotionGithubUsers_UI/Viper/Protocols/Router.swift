@@ -1,14 +1,13 @@
 //
 //  Routable.swift
-//  DailymotionGithubUsers_iOS
+//  DailymotionGithubUsers_UI
 //
-//  Created by Adrian Kaczmarek on 12/03/2021.
+//  Created by Adrian Kaczmarek on 15/03/2021.
 //
 
 import UIKit
-import DailymotionGithubUsers_UI
 
-protocol Routable: AnyObject {
+public protocol Routable: AnyObject {
     var _presenter: Presentable! { get set }
     var viewController: UIViewController { get }
     var nextScreens: [NextScreen] { get set }
@@ -28,7 +27,7 @@ protocol Routable: AnyObject {
     func switchRootViewController(embedInNavigationController: Bool)
 }
 
-extension Routable {
+public extension Routable {
     var isNextScreen: Bool { return !nextScreens.isEmpty }
 
     func navigateToNextScreen() {
@@ -71,20 +70,20 @@ extension Routable {
 }
 
 open class Router: Routable {
-    weak var _presenter: Presentable!
-    var viewController: UIViewController {
+    public weak var _presenter: Presentable!
+    public var viewController: UIViewController {
         _presenter._view
     }
 
     let screenNavigator: ScreenNavigable
 
-    var nextScreens: [NextScreen] = []
+    public var nextScreens: [NextScreen] = []
 
-    init(screenNavigator: ScreenNavigable = ScreenNavigator()) {
+    public init(screenNavigator: ScreenNavigable = ScreenNavigator()) {
         self.screenNavigator = screenNavigator
     }
 
-    func navigate(to screen: NextScreen, nextScreens: [NextScreen]?) {
+    public func navigate(to screen: NextScreen, nextScreens: [NextScreen]?) {
         let module = screen.module.build(data: screen.data)
         module.router?.nextScreens = nextScreens ?? .init(self.nextScreens.dropFirst())
 
@@ -104,16 +103,16 @@ open class Router: Routable {
         }
     }
 
-    func embedNavigationController(closeButton: Bool = false) -> UINavigationController {
+    public func embedNavigationController(closeButton: Bool = false) -> UINavigationController {
         return getNavigationController() ?? viewController.embedInNavigationController(closeButton: closeButton)
     }
 
-    func switchRootViewController(embedInNavigationController: Bool = false) {
+    public func switchRootViewController(embedInNavigationController: Bool = false) {
         let view = embedInNavigationController ? embedNavigationController() : viewController
         screenNavigator.changeRoot(to: view)
     }
 
-    func show(in window: UIWindow?, embedInNavigationController: Bool = false, makeKeyAndVisible: Bool = true) {
+    public func show(in window: UIWindow?, embedInNavigationController: Bool = false, makeKeyAndVisible: Bool = true) {
         let view = embedInNavigationController ? embedNavigationController() : viewController
         window?.rootViewController = view
         if makeKeyAndVisible {
@@ -121,12 +120,12 @@ open class Router: Routable {
         }
     }
 
-    func show(from: UIViewController, embedInNavigationController: Bool) {
+    public func show(from: UIViewController, embedInNavigationController: Bool) {
         let view = embedInNavigationController ? embedNavigationController() : viewController
         from.show(view, sender: nil)
     }
 
-    func present(from: UIViewController,
+    public func present(from: UIViewController,
                  embedInNavigationController: Bool = false,
                  presentationStyle: UIModalPresentationStyle = .currentContext,
                  transitionStyle: UIModalTransitionStyle = .coverVertical,
@@ -139,11 +138,11 @@ open class Router: Routable {
         from.present(view, animated: true, completion: completion)
     }
 
-    func present(_ viewToPresent: UIViewController) {
+    public func present(_ viewToPresent: UIViewController) {
         viewController.present(viewToPresent, animated: true, completion: nil)
     }
 
-    func dismiss(animated: Bool = true, completion: (() -> Void)? = nil) {
+    public func dismiss(animated: Bool = true, completion: (() -> Void)? = nil) {
         dismissPresentedView(animated: animated) { [weak self] in
             guard let `self` = self else { return }
 

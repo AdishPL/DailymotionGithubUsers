@@ -1,14 +1,13 @@
 //
 //  Viewer.swift
-//  DailymotionGithubUsers_iOS
+//  DailymotionGithubUsers_UI
 //
-//  Created by Adrian Kaczmarek on 12/03/2021.
+//  Created by Adrian Kaczmarek on 15/03/2021.
 //
 
 import UIKit
-import DailymotionGithubUsers_UI
 
-protocol Viewable: ViewShowable {
+public protocol Viewable: ViewShowable {
     var _presenter: Presentable! { get set }
 
     func dismiss(completion: (() -> Void)?)
@@ -16,13 +15,13 @@ protocol Viewable: ViewShowable {
 }
 
 extension Viewable {
-    func dismiss(completion: (() -> Void)?) {
+    public func dismiss(completion: (() -> Void)?) {
         dismiss(animated: true, completion: completion)
     }
 }
 
 open class Viewer: UIViewController, Viewable {
-    var _presenter: Presentable!
+    public var _presenter: Presentable!
 
     override open var preferredStatusBarStyle: UIStatusBarStyle {
         return AppDesign.current.statusBarStyle

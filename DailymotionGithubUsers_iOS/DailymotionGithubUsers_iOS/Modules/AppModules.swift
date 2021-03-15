@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DailymotionGithubUsers_UI
 
 enum AppModules: String {
     case launch

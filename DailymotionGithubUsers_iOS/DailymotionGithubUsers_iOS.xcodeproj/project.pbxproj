@@ -14,15 +14,6 @@
 		323F03B325FBE67700A73D4E /* DailymotionGithubUsers_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323F03B225FBE67700A73D4E /* DailymotionGithubUsers_UI.framework */; };
 		323F03BA25FBEA2A00A73D4E /* DailymotionGithubUsers_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03B925FBEA2A00A73D4E /* DailymotionGithubUsers_iOS.swift */; };
 		323F03C125FBF41600A73D4E /* AppModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03C025FBF41600A73D4E /* AppModules.swift */; };
-		323F03C825FBF49800A73D4E /* ViperModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03C725FBF49800A73D4E /* ViperModule.swift */; };
-		323F03CD25FBF4C900A73D4E /* Viewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03CC25FBF4C900A73D4E /* Viewer.swift */; };
-		323F03DA25FBF58500A73D4E /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03D925FBF58500A73D4E /* Presenter.swift */; };
-		323F03DE25FBF5E600A73D4E /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03DD25FBF5E600A73D4E /* Routable.swift */; };
-		323F03E225FBF88700A73D4E /* NextScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03E125FBF88700A73D4E /* NextScreen.swift */; };
-		323F03E625FBF8B100A73D4E /* ScreenNavigationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03E525FBF8B100A73D4E /* ScreenNavigationType.swift */; };
-		323F03EA25FBF8D500A73D4E /* ViewPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03E925FBF8D500A73D4E /* ViewPresentation.swift */; };
-		323F03EE25FBF9C200A73D4E /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03ED25FBF9C200A73D4E /* Module.swift */; };
-		323F03FE25FBFB4200A73D4E /* ScreenNavigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F03FD25FBFB4200A73D4E /* ScreenNavigable.swift */; };
 		323F041125FBFEA800A73D4E /* AppViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F041025FBFEA800A73D4E /* AppViewFactory.swift */; };
 		323F041B25FC006700A73D4E /* LaunchContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F041A25FC006700A73D4E /* LaunchContract.swift */; };
 		323F042125FC00FF00A73D4E /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F042025FC00FF00A73D4E /* LaunchRouter.swift */; };
@@ -66,15 +57,6 @@
 		323F03B225FBE67700A73D4E /* DailymotionGithubUsers_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DailymotionGithubUsers_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		323F03B925FBEA2A00A73D4E /* DailymotionGithubUsers_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionGithubUsers_iOS.swift; sourceTree = "<group>"; };
 		323F03C025FBF41600A73D4E /* AppModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModules.swift; sourceTree = "<group>"; };
-		323F03C725FBF49800A73D4E /* ViperModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperModule.swift; sourceTree = "<group>"; };
-		323F03CC25FBF4C900A73D4E /* Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewer.swift; sourceTree = "<group>"; };
-		323F03D925FBF58500A73D4E /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		323F03DD25FBF5E600A73D4E /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
-		323F03E125FBF88700A73D4E /* NextScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextScreen.swift; sourceTree = "<group>"; };
-		323F03E525FBF8B100A73D4E /* ScreenNavigationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenNavigationType.swift; sourceTree = "<group>"; };
-		323F03E925FBF8D500A73D4E /* ViewPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentation.swift; sourceTree = "<group>"; };
-		323F03ED25FBF9C200A73D4E /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
-		323F03FD25FBFB4200A73D4E /* ScreenNavigable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenNavigable.swift; sourceTree = "<group>"; };
 		323F041025FBFEA800A73D4E /* AppViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewFactory.swift; sourceTree = "<group>"; };
 		323F041A25FC006700A73D4E /* LaunchContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchContract.swift; sourceTree = "<group>"; };
 		323F042025FC00FF00A73D4E /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
@@ -173,9 +155,6 @@
 				323F040F25FBFE9B00A73D4E /* View Factories */,
 				323F03C625FBF47800A73D4E /* Viper */,
 				323F03C025FBF41600A73D4E /* AppModules.swift */,
-				323F03E525FBF8B100A73D4E /* ScreenNavigationType.swift */,
-				323F03E925FBF8D500A73D4E /* ViewPresentation.swift */,
-				323F03E125FBF88700A73D4E /* NextScreen.swift */,
 				32C02B6925FE209F00E77353 /* ViewSpecificController.swift */,
 			);
 			path = Modules;
@@ -184,22 +163,8 @@
 		323F03C625FBF47800A73D4E /* Viper */ = {
 			isa = PBXGroup;
 			children = (
-				323F03CB25FBF4B400A73D4E /* Protocols */,
-				323F03C725FBF49800A73D4E /* ViperModule.swift */,
-				323F03FD25FBFB4200A73D4E /* ScreenNavigable.swift */,
-				323F03ED25FBF9C200A73D4E /* Module.swift */,
 			);
 			path = Viper;
-			sourceTree = "<group>";
-		};
-		323F03CB25FBF4B400A73D4E /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				323F03CC25FBF4C900A73D4E /* Viewer.swift */,
-				323F03DD25FBF5E600A73D4E /* Routable.swift */,
-				323F03D925FBF58500A73D4E /* Presenter.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		323F040F25FBFE9B00A73D4E /* View Factories */ = {
@@ -384,35 +349,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323F03EA25FBF8D500A73D4E /* ViewPresentation.swift in Sources */,
 				32C02B9A25FE35B500E77353 /* UserTableViewCell.swift in Sources */,
-				323F03DA25FBF58500A73D4E /* Presenter.swift in Sources */,
-				323F03DE25FBF5E600A73D4E /* Routable.swift in Sources */,
 				32C02C3525FE77AB00E77353 /* UserDetailRouter.swift in Sources */,
 				32C02B7525FE261700E77353 /* UsersMasterViewController.swift in Sources */,
 				323F042525FC014300A73D4E /* LaunchPresenter.swift in Sources */,
 				32C02C2D25FE700A00E77353 /* UserDetailRootView.swift in Sources */,
 				32C02B9525FE2F2A00E77353 /* UsersMasterPresenter.swift in Sources */,
 				32C02B7125FE259E00E77353 /* UsersMasterContract.swift in Sources */,
-				323F03E225FBF88700A73D4E /* NextScreen.swift in Sources */,
-				323F03C825FBF49800A73D4E /* ViperModule.swift in Sources */,
 				32C02C2525FE6FD500E77353 /* UserDetailPresenter.swift in Sources */,
 				32C02B6A25FE209F00E77353 /* ViewSpecificController.swift in Sources */,
 				32C02C1525FE54C600E77353 /* UsersMasterRouter.swift in Sources */,
 				32C02B7925FE271A00E77353 /* UsersMasterRootView.swift in Sources */,
 				32C02C2925FE6FFE00E77353 /* UserDetailViewController.swift in Sources */,
-				323F03FE25FBFB4200A73D4E /* ScreenNavigable.swift in Sources */,
 				323F041125FBFEA800A73D4E /* AppViewFactory.swift in Sources */,
 				32C02BA025FE366800E77353 /* UserCellModel.swift in Sources */,
-				323F03E625FBF8B100A73D4E /* ScreenNavigationType.swift in Sources */,
 				32C02C2125FE6F5300E77353 /* UserDetailContract.swift in Sources */,
 				323F041B25FC006700A73D4E /* LaunchContract.swift in Sources */,
 				32C02C0F25FE544A00E77353 /* UsersViewFactory.swift in Sources */,
 				323F03C125FBF41600A73D4E /* AppModules.swift in Sources */,
-				323F03CD25FBF4C900A73D4E /* Viewer.swift in Sources */,
 				323F03BA25FBEA2A00A73D4E /* DailymotionGithubUsers_iOS.swift in Sources */,
 				323F042125FC00FF00A73D4E /* LaunchRouter.swift in Sources */,
-				323F03EE25FBF9C200A73D4E /* Module.swift in Sources */,
 				323F03AC25FBE63E00A73D4E /* LaunchViewController.swift in Sources */,
 				32C02B6425FE1FFC00E77353 /* LaunchRootView.swift in Sources */,
 			);

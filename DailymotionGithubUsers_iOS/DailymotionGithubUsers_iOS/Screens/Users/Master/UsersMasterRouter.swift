@@ -7,6 +7,7 @@
 
 import Foundation
 import DailymotionGithubUsers_Core
+import DailymotionGithubUsers_UI
 
 class UsersMasterRouter: Router, UsersMasterRouterable {
     func navigateToUserDetail(_ user: User) {

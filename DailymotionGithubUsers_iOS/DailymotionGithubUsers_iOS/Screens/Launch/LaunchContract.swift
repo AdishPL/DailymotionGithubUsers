@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DailymotionGithubUsers_UI
 
 protocol LaunchViewable: Viewable {
     var presenter: LaunchPresentable { get }

@@ -7,6 +7,7 @@
 
 import Foundation
 import DailymotionGithubUsers_Core
+import DailymotionGithubUsers_UI
 
 final class UserDetailPresenter: Presenter, UserDetailPresentable {
     // MARK: - Private Properties

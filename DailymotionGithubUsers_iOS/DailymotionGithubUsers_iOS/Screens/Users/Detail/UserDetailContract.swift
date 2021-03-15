@@ -7,6 +7,7 @@
 
 import Foundation
 import DailymotionGithubUsers_Core
+import DailymotionGithubUsers_UI
 
 protocol UserDetailViewable: Viewable {
     var presenter: UserDetailPresentable { get }

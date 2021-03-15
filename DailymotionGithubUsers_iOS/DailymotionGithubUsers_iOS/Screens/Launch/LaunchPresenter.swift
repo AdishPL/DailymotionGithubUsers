@@ -6,13 +6,18 @@
 //
 
 import Foundation
+import DailymotionGithubUsers_UI
 
 final class LaunchPresenter: Presenter, LaunchPresentable {
+    // MARK: - Initializer
+
     init(view: LaunchViewable,
          router: LaunchRouterable) {
         super.init(view, router)
     }
     
+    // MARK: - Binding
+
     override func bind() {
         super.bind()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [unowned self] in

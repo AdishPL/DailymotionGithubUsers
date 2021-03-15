@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32471A1825FF52070009C81C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32471A1725FF52070009C81C /* String+Extensions.swift */; };
 		32C02BB725FE399E00E77353 /* DailymotionGithubUsers_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C02BAD25FE399E00E77353 /* DailymotionGithubUsers_Core.framework */; };
 		32C02BBC25FE399E00E77353 /* DailymotionGithubUsers_CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C02BBB25FE399E00E77353 /* DailymotionGithubUsers_CoreTests.swift */; };
 		32C02BBE25FE399E00E77353 /* DailymotionGithubUsers_Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C02BB025FE399E00E77353 /* DailymotionGithubUsers_Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32471A1725FF52070009C81C /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		32C02BAD25FE399E00E77353 /* DailymotionGithubUsers_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DailymotionGithubUsers_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C02BB025FE399E00E77353 /* DailymotionGithubUsers_Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailymotionGithubUsers_Core.h; sourceTree = "<group>"; };
 		32C02BB125FE399E00E77353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32471A1625FF51F70009C81C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				32471A1725FF52070009C81C /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		32C02BA325FE399E00E77353 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		32C02BAF25FE399E00E77353 /* DailymotionGithubUsers_Core */ = {
 			isa = PBXGroup;
 			children = (
+				32471A1625FF51F70009C81C /* Extensions */,
 				32C02BF925FE471700E77353 /* Models */,
 				32C02BD925FE3DB400E77353 /* Repositories */,
 				32C02BCB25FE39FB00E77353 /* Core.swift */,
@@ -250,6 +261,7 @@
 				32C02BDC25FE3E4000E77353 /* UsersEphemeralRepository.swift in Sources */,
 				32C02BCC25FE39FB00E77353 /* Core.swift in Sources */,
 				32C02BFF25FE4C7900E77353 /* UsersRepositoryProtocol.swift in Sources */,
+				32471A1825FF52070009C81C /* String+Extensions.swift in Sources */,
 				32C02BD225FE3C0600E77353 /* Repositories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,21 +1,22 @@
 //
 //  ViperModule.swift
-//  DailymotionGithubUsers_iOS
+//  DailymotionGithubUsers_UI
 //
-//  Created by Adrian Kaczmarek on 12/03/2021.
+//  Created by Adrian Kaczmarek on 15/03/2021.
 //
 
 import UIKit
+import DailymotionGithubUsers_Core
 
 private let _tabletSuffix = "Pad"
 
-enum ViewType {
+public enum ViewType {
     case code
     case nib
     case storyboard
 }
 
-protocol ViperModule {
+public protocol ViperModule {
     var id: String { get }
     var viewType: ViewType { get }
     var viewName: String { get }
@@ -25,7 +26,7 @@ protocol ViperModule {
     func build(data: Any?) -> Module
 }
 
-extension ViperModule where Self: RawRepresentable, Self.RawValue == String {
+public extension ViperModule where Self: RawRepresentable, Self.RawValue == String {
     var id: String {
         return rawValue
     }
@@ -54,7 +55,7 @@ extension ViperModule where Self: RawRepresentable, Self.RawValue == String {
     }
 }
 
-extension ViperModule {
+public extension ViperModule {
     func isEqual(to module: ViperModule) -> Bool {
         return id == module.id
     }
@@ -74,15 +75,5 @@ extension ViperModule {
         }
 
         return NSClassFromString(classInBundle)
-    }
-}
-
-extension String {
-    var first: String {
-        return String(prefix(1))
-    }
-    
-    var uppercasedFirst: String {
-        return first.uppercased() + String(dropFirst())
     }
 }

@@ -7,6 +7,7 @@
 
 import Foundation
 import DailymotionGithubUsers_Core
+import DailymotionGithubUsers_UI
 
 public final class UserDetailViewController: Viewer, ViewSpecificController {
     typealias RootView = UserDetailRootView
