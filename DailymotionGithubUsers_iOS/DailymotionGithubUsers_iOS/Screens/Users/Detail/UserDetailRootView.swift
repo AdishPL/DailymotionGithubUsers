@@ -51,7 +51,7 @@ final class UserDetailRootView: NiblessView {
         ])
         
         NSLayoutConstraint.activate([
-            photoImageView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height * 0.2),
+            photoImageView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height * 0.4),
             photoImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor)
         ])
     }

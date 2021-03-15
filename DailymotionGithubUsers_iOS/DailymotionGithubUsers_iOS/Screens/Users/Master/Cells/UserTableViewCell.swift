@@ -73,7 +73,7 @@ final class UserTableViewCell: UITableViewCell {
             photoImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: AppLayoutMargin.large.value),
             photoImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: AppLayoutMargin.semiLarge.value),
             photoImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -AppLayoutMargin.large.value),
-            photoImageView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height * 0.1),
+            photoImageView.heightAnchor.constraint(equalToConstant: 80),
             photoImageView.widthAnchor.constraint(equalTo: photoImageView.heightAnchor)
         ])
     }

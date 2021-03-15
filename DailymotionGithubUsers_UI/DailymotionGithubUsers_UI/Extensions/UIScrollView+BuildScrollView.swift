@@ -60,7 +60,7 @@ public extension UIScrollView {
                 contentView.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor, constant: contentInset.left),
                 contentView.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor, constant: contentInset.right),
                 contentView.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor, constant: contentInset.top),
-                contentView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor, constant: contentInset.bottom)
+                contentView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor, constant: -contentInset.bottom)
             ])
         } else {
             NSLayoutConstraint.activate([
